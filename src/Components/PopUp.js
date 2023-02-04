@@ -21,7 +21,7 @@ export default function PopUp(props){
             break
 
         case "Ceremony":
-            popUpSticker = require("./images/star_shark.png")
+            popUpSticker = require("./images/computer_sharks.png")
             break
 
         case "Hackathon":
