@@ -5,7 +5,7 @@ export default function Modal(props){
     // let googleImg =``
     return(
         <>
-            <h2>Get Notified</h2>
+            <h2 id="modal--title">Get Notified</h2>
             <div id="modal--container"style={{display:"flex", justifyContent:"center"}}>
                 <a href="https://www.w3schools.com" target="_blank">
                     <img src={googleImg} />

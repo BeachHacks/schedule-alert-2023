@@ -82,20 +82,23 @@
   } */
 
   .popup--container{
-    scale: 60% !important;
+    scale: 50% !important;
   }
+
   .popup--container h3{
     font-size: 20px;
   }
 
   .popup--container p{
+    margin-top: -5px;
     line-height: 30px !important;
   }
 
   #modal--container img{
+    margin-top: -10px;;
     scale:30% !important
   }
-  
+
 }
 
 @media(max-width: 300px){ /* For galaxy fold :( */
