@@ -15,45 +15,74 @@
   }
 
   .grid--container{
+    grid-template-columns: 1fr 2fr 1fr !important ;
     height: 50px !important;
     margin: 0px 0px 0px 10px;
-    
     margin-right: 10px;
 
-    scale: 90%
 
   }
-  .event--title, .event--time, .event--description{
-    font-size: 4px !important;
+
+  .event--description{
+    display: none;
   }
 
-  .event--title{
-    max-height: 50px;
-
+  .event--title, .event--time{
+    font-size: 8px !important;
   }
+
   .event--location{
-    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  .tentativeSchedule--column .event--container {
+    grid-template-columns: 30% 70%  !important;
+    max-height: 75px;
+  }
+
+  .tentativeSchedule--column .event--container > div{
+    scale: 100%;
+  }
+
+  .tentativeSchedule--column .event--container .event--title{
+    border-right: none;
+    font-size: 9px !important;
+    padding-right: 3px;
+  }
+
+  .tentativeSchedule--column .event--container .event--location{
+    display: none;
+  }
+
+  .tentativeSchedule--column .event--container .event--time{
+    font-size: 9px !important;
   }
 
 
 
 
-   .tentativeSchedule--column .event--location{
+   /* .tentativeSchedule--column .event--location{
     margin-left: 10px !important;
     margin-right: 10px;
   } 
 
 
   .tentativeSchedule--column .event--container{
+    grid-template-columns: 1fr 50% 1fr !important;
     max-height: 50px;
   }
 
   .tentativeSchedule--column .event--time{
     margin-left:8px;
+    font-size: 15px !important;
   }
 
+  .tentativeSchedule--column .event--title{
+    font-size: 12px !important;
+  } */
+
   .popup--container{
-    scale: 50% !important;
+    scale: 60% !important;
   }
   .popup--container h3{
     font-size: 20px;
@@ -80,10 +109,19 @@
     padding-right: 20px;
   }
 
+  .tentativeSchedule--column .event--container .event--time{
+    font-size: 7px !important;
+  }
+
+  .tentativeSchedule--column .event--container .event--title{
+    border-right: none;
+    font-size: 8px !important;
+
+  }
+
   .grid--container .event--location{
     margin-left: 30%;
   }
-
 
   .popup--container{
     scale:40% !important
@@ -139,7 +177,7 @@ h2{
 
 .tentativeSchedule--container .event--container{
   display: grid !important ; 
-  grid-template-columns: 30% 40% 1fr !important ;
+  grid-template-columns: 30% 40% 1fr ;
   
   align-items: center;
   justify-content: space-evenly;
@@ -176,7 +214,7 @@ h2{
 
 .grid--container{
   display: grid !important ; 
-  grid-template-columns: 1fr 1fr 2fr 1fr !important ;
+  grid-template-columns: 1fr 1fr 2fr 1fr  ;
   align-items: center;
   justify-content: space-evenly;
 
