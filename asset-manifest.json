@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/schedule-alert-2023/static/css/main.c8384e34.css",
-    "main.js": "/schedule-alert-2023/static/js/main.13494ffd.js",
+    "main.js": "/schedule-alert-2023/static/js/main.3e770a69.js",
     "static/js/787.28cb0dcd.chunk.js": "/schedule-alert-2023/static/js/787.28cb0dcd.chunk.js",
     "static/media/sharks_conversating.png": "/schedule-alert-2023/static/media/sharks_conversating.c70700b39e368b288e29.png",
     "static/media/boba_sharks.png": "/schedule-alert-2023/static/media/boba_sharks.1a7d4ea133eedeb66c1e.png",
@@ -13,15 +13,14 @@
     "static/media/dressed_up_shark.png": "/schedule-alert-2023/static/media/dressed_up_shark.2420e406a878b3649f71.png",
     "static/media/computer_sharks.png": "/schedule-alert-2023/static/media/computer_sharks.fc09786ca889fa2ada1a.png",
     "static/media/donut_shark.png": "/schedule-alert-2023/static/media/donut_shark.f1aa2fa8dfa324467670.png",
-    "static/media/star_shark.png": "/schedule-alert-2023/static/media/star_shark.430c1a482daec76f71a7.png",
     "static/media/discord.png": "/schedule-alert-2023/static/media/discord.5de04f93d4e03aa4b51c.png",
     "index.html": "/schedule-alert-2023/index.html",
     "main.c8384e34.css.map": "/schedule-alert-2023/static/css/main.c8384e34.css.map",
-    "main.13494ffd.js.map": "/schedule-alert-2023/static/js/main.13494ffd.js.map",
+    "main.3e770a69.js.map": "/schedule-alert-2023/static/js/main.3e770a69.js.map",
     "787.28cb0dcd.chunk.js.map": "/schedule-alert-2023/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8384e34.css",
-    "static/js/main.13494ffd.js"
+    "static/js/main.3e770a69.js"
   ]
 }
