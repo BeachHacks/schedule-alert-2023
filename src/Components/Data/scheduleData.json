@@ -5,6 +5,7 @@
             "day": "Saturday",
             "title" :"GitHub Workshop",
             "category" : "Source Control",
+            "eventType": "Workshop",
             "location" : "TBA",
             "description" : "Not very familiar with GitHub and you need it for this hackathon? Don’t worry, BeachHacks got you! Come to our first workshop of the day where you will learn about the basics of Github. By the end of the session, you will learn how to navigate Github confidently!"
         },
@@ -12,6 +13,7 @@
             "time" : "6:30PM-7:30PM",
             "day": "Saturday",
             "title" : "Video Game Development",
+            "eventType": "Workshop",
             "category" : "VGDA",
             "description" : "Interested in learning about video game development? VGDA is hosting a workshop to help you learn about video game development.",
             "location" : "TBA"
@@ -20,6 +22,7 @@
             "time" : "9:30AM-10:30AM",
             "day": "Sunday",
             "title" : "Hardware Workshop",
+            "eventType": "Workshop",
             "category" : "Arduino",
             "description" : "Software needs hardware and hardware needs software to run. Come to the hardware workshop to learn more about what hardware has to offer.",
             "location" : "TBA"
@@ -28,7 +31,8 @@
             "time" : "10:30AM-11:30AM",
             "day": "Sunday",
             "title" : "LinkedIn Workshop",
-            "category" : "LinkedIN",
+            "eventType": "LinkedIn",
+            "category" : "LinkedIn",
             "description" : "Come and learn more about what Linkedin Learning has to offer for you!",
             "location" : "TBA"
         },
@@ -36,6 +40,7 @@
             "time" : "12:30PM-1:30PM",
             "day": "Sunday",
             "title" : "Technical Interview Workshop",
+            "eventType": "Workshop",
             "category" : "Eunice Kang",
             "description" : "Are you preparing for upcoming technical interviews? Come to our technical interview workshop where we will give you tips on how to improve your technical interview to secure that job/internship 💰",
             "location" : "TBA"
@@ -47,14 +52,16 @@
             {
                 "time" :"1:30PM-2:30PM",
                 "title" :"Registration / Team Matching Session",
+                "eventType": "Registration",
                 "category" : "",
                 "location" : "TBA",
-                "description" : "Join us at our ceremony to learn more about rules, prizes and events we have planned out for BeachHacks 7.0 and "
+                "description" : ""
 
             },
             {
                 "time" :"2:30PM-3:30PM",
                 "title" :"Opening Ceremony",
+                "eventType": "Ceremony",
                 "category" : "Michael Botsko",
                 "location" : "TBA",
                 "description" : "Join us at our ceremony to learn more about rules, prizes and events we have planned out for BeachHacks 7.0! Additionally, Micheal Botsko will be our opening keynote speaker. He has years of experience in the EdTech industry. Michael was also the founder of BeachHacks and the president of ACM!"
@@ -62,6 +69,7 @@
             {
                 "time" :"3:30PM-4:30PM",
                 "title" :"Hacking Begins!",
+                "eventType": "Hackathon",
                 "category" : "Event Start",
                 "location" : "TBA",
                 "description" : "Show off your python Skills in a collaborative project. Up to 5 team members using the python programming language"
@@ -70,12 +78,14 @@
                 "time" :"4:30PM-5:30PM",
                 "title" :"Cup Stacking",
                 "category" : "Jolene & Reyna (Operations)",
+                "eventType": "Social",
                 "location" : "TBA",
                 "description" : "Wanna improve your motor skills and hand-eye coordination? We have cup stacking game waiting for you to play against other participants."
             },
             {
                 "time" :"5:30PM-6:30PM",
                 "title" :"Dinner",
+                "eventType": "Food",
                 "category" : "",
                 "location" : "TBA",
                 "description" : "Nom, nom!"
@@ -83,13 +93,15 @@
             {
                 "time" :"7:30PM-8:30PM",
                 "title" :"How to get most of your hackathon project to land your dream job",
+                "eventType": "Keynote-Speaker",
                 "category" : "Chrisitan Bourdeau",
                 "location" : "TBA",
-                "description" : "Want to learn how to make yourself stand up with the hackathon project you’re coding right now? Well, this is the right workshop for you to attend!"
+                "description" : "Want to learn how to make yourself stand out with the hackathon project you’re coding right now? Well, this is the event for you to attend! Christian Bourdeau will be our keynote speaker. He has many years of experience as an analytic engineer under his belt. Christian has worked in different companies such as Nike, PlayStation and more. Currently he is working with Netflix."
             },
             {
                 "time" :"8:30PM-9:30PM",
                 "title" :"Social/Networking",
+                "eventType": "Social",
                 "category" : "Mark & Reyna (Operations)",
                 "location" : "TBA",
                 "description" : "Need a break from coding? Come to our social/networking event where you will meet new friends and bond through playing fun games❤️"
@@ -97,9 +109,10 @@
             {
                 "time" :"9:30PM-11:59AM",
                 "title" :"Hacking...",
+                "eventType": "Hacking",
                 "category" : "Code, code, code!",
                 "location" : "TBA",
-                "description" : "Show off your python Skills in a collaborative project. Up to 5 team members using the python programming language"
+                "description" : "If you need any information regarding workshops, please don’t hesitate to ask one of the volunteers. Have fun coding!"
             }
 
 
@@ -109,14 +122,16 @@
             {
                 "time" :"12:00AM-8:30AM",
                 "title" :"Hacking... ",
+                "eventType": "Hacking",
                 "category" : "Code, code, code!",
                 "location" : "TBA",
-                "description" : "Show off your python Skills in a collaborative project. Up to 5 team members using the python programming language"
+                "description" : "If you need any information regarding workshops, please don’t hesitate to ask one of the volunteers. Have fun coding!"
 
             },
             {
                 "time" :"8:30AM-9:30AM",
                 "title" :"Breakfast",
+                "eventType": "Food",
                 "category" : "",
                 "location" : "TBA",
                 "description" : "We eat breakfast for success!"
@@ -124,6 +139,7 @@
             {
                 "time" :"11:30AM-12:30PM",
                 "title" :"Lunch",
+                "eventType": "Food",
                 "category" : "",
                 "location" : "TBA",
                 "description" : "Don’t forget to fill up your stomach with food before you continue coding!"
@@ -131,6 +147,7 @@
             {
                 "time" :"1:30PM-3:00PM",
                 "title" :"Alumni Career Panel",
+                "eventType": "Career-Panel",
                 "category" : "Shri (Operations)",
                 "location" : "TBA",
                 "description" : "Wonder what working in the professional industries are like? Come to our career panel to hear from our alumni about their experience."
@@ -138,13 +155,15 @@
             {
                 "time" :"4:00PM-4:30PM",
                 "title" :"Hacking Ends! (4PM) / Judging Begins",
+                "eventType": "Judging",
                 "category" : "Mark & Reyna (Operations)",
                 "location" : "TBA",
-                "description" : "Show off your python Skills in a collaborative project. Up to 5 team members using the python programming language"
+                "description" : "Good job! Now it’s time to relax and wait for the result. Judging is in the process…"
             },
             {
                 "time" :"4:30PM-5:30PM",
                 "title" :"Closing Ceremony",
+                "eventType": "Ceremony",
                 "category" : "",
                 "location" : "TBA",
                 "description" : "You guys have worked hard for this hackathon. Come to our closing ceremony to find out if your team won and celebrate everyone’s hard work. Additionally, Christian Bourdeau will be our closing keynote speaker. He has many years of experience as an analytic engineer under his belt. Christian has worked in different companies such as Nike, PlayStation and more. Currently he is working with Netflix."

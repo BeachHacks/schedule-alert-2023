@@ -59,30 +59,9 @@
   }
 
 
-
-
-   /* .tentativeSchedule--column .event--location{
-    margin-left: 10px !important;
-    margin-right: 10px;
-  } 
-
-
-  .tentativeSchedule--column .event--container{
-    grid-template-columns: 1fr 50% 1fr !important;
-    max-height: 50px;
-  }
-
-  .tentativeSchedule--column .event--time{
-    margin-left:8px;
-    font-size: 15px !important;
-  }
-
-  .tentativeSchedule--column .event--title{
-    font-size: 12px !important;
-  } */
-
   .popup--container{
     scale: 50% !important;
+    max-width: 600px !important;
   }
 
   .popup--container h3{
@@ -92,6 +71,10 @@
   .popup--container p{
     margin-top: -5px;
     line-height: 30px !important;
+  }
+
+  #popUpImg{
+    margin: 5px 0px !important;
   }
 
   #modal--container img{
@@ -268,7 +251,7 @@ h2{
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 
 .tentativeSchedule--column{
@@ -300,8 +283,9 @@ h2{
   padding: 15px 15px;
   color:black;  
 
-  max-width: 800px;
   scale: 45%;
+  max-width: 800px;
+  /* max-height: 1300px; */
 }
 
 .popup--container p{
@@ -330,7 +314,9 @@ h2{
 }
 
 #popUpImg{
-  scale: 70%;
+  margin-top: -70px;
+  margin-bottom: -120px;
+  scale: 60%;
 }
 
 

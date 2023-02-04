@@ -2,16 +2,66 @@
 import Modal from "./Modal"
 export default function PopUp(props){
     const {popUpData} = props
+    const {eventType} = popUpData
+
+
     const buttonContainerStyle={
         alignSelf:"end",
         marginRight: "5px"
     }
 
-    // const testIcon = require("./images/icon_3.png")
     const closeButtonSrc = require("./images/remove_resize1.png")
+    let popUpSticker
 
-    const popUpIconsSrc = [require("./images/icon_1.png"), require("./images/icon_2.png") ] // * Stickers!
-    const randomIconSrc = popUpIconsSrc[Math.floor(Math.random() * popUpIconsSrc.length)]
+    console.log("event type:", eventType)
+
+    switch (eventType){
+        case "Registration":
+            popUpSticker = require("./images/judge_sharks.png")
+            break
+
+        case "Ceremony":
+            popUpSticker = require("./images/star_shark.png")
+            break
+
+        case "Hackathon":
+            popUpSticker = require("./images/dressed_up_shark.png")
+            break
+
+        case "Hacking":
+            popUpSticker = require("./images/computer_sharks.png")
+            break
+
+        case "Food":
+            popUpSticker = require("./images/donut_shark.png")
+            break
+
+        case "Keynote-Speaker":
+            popUpSticker = require("./images/glasses_shark.png")
+            break
+
+        case "Social":
+            popUpSticker = require("./images/sharks_conversating.png")
+            break
+
+        case "Career-Panel":
+            popUpSticker = require("./images/questionmark_shark.png")
+            break
+        case "LinkedIn":
+            popUpSticker = require("./images/linkedin_shark.png")
+            break
+
+        case "Judging":
+            popUpSticker = require("./images/judge_sharks.png")
+            break
+
+        case "Workshop":
+            popUpSticker = require("./images/boba_sharks.png")
+            break
+
+        default:
+            popUpSticker =  require("./images/icon_2.png")
+    }
 
     return(
         <div className="popup--overlay">
@@ -21,7 +71,7 @@ export default function PopUp(props){
                 <h2>Location: {popUpData.location}</h2>
                 <p>{popUpData.description}</p>
                 <Modal/>
-                <img src={randomIconSrc}  id="popUpImg"/>
+                <img src={popUpSticker}  id="popUpImg"/>
                 <br/> <br/>
             </div>
         </div>
