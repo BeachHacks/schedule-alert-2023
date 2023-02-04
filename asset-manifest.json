@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/schedule-alert-2023/static/css/main.88eca47a.css",
-    "main.js": "/schedule-alert-2023/static/js/main.e9fcb606.js",
+    "main.css": "/schedule-alert-2023/static/css/main.e42fac8b.css",
+    "main.js": "/schedule-alert-2023/static/js/main.57ae820b.js",
     "static/js/787.28cb0dcd.chunk.js": "/schedule-alert-2023/static/js/787.28cb0dcd.chunk.js",
     "static/media/icon_2.png": "/schedule-alert-2023/static/media/icon_2.31d2de0c330699f63adb.png",
     "static/media/icon_1.png": "/schedule-alert-2023/static/media/icon_1.fc09786ca889fa2ada1a.png",
     "static/media/discord.png": "/schedule-alert-2023/static/media/discord.5de04f93d4e03aa4b51c.png",
     "index.html": "/schedule-alert-2023/index.html",
-    "main.88eca47a.css.map": "/schedule-alert-2023/static/css/main.88eca47a.css.map",
-    "main.e9fcb606.js.map": "/schedule-alert-2023/static/js/main.e9fcb606.js.map",
+    "main.e42fac8b.css.map": "/schedule-alert-2023/static/css/main.e42fac8b.css.map",
+    "main.57ae820b.js.map": "/schedule-alert-2023/static/js/main.57ae820b.js.map",
     "787.28cb0dcd.chunk.js.map": "/schedule-alert-2023/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88eca47a.css",
-    "static/js/main.e9fcb606.js"
+    "static/css/main.e42fac8b.css",
+    "static/js/main.57ae820b.js"
   ]
 }
