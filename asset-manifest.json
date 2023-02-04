@@ -1,18 +1,27 @@
 {
   "files": {
-    "main.css": "/schedule-alert-2023/static/css/main.c72a6a1c.css",
-    "main.js": "/schedule-alert-2023/static/js/main.d53a813b.js",
+    "main.css": "/schedule-alert-2023/static/css/main.7db66ffa.css",
+    "main.js": "/schedule-alert-2023/static/js/main.13494ffd.js",
     "static/js/787.28cb0dcd.chunk.js": "/schedule-alert-2023/static/js/787.28cb0dcd.chunk.js",
+    "static/media/sharks_conversating.png": "/schedule-alert-2023/static/media/sharks_conversating.c70700b39e368b288e29.png",
+    "static/media/boba_sharks.png": "/schedule-alert-2023/static/media/boba_sharks.1a7d4ea133eedeb66c1e.png",
+    "static/media/glasses_shark.png": "/schedule-alert-2023/static/media/glasses_shark.3359b04cf6e319c3df34.png",
+    "static/media/linkedin_shark.png": "/schedule-alert-2023/static/media/linkedin_shark.a35ac9395bf3fec00403.png",
+    "static/media/judge_sharks.png": "/schedule-alert-2023/static/media/judge_sharks.9fe909803e85ad383898.png",
+    "static/media/questionmark_shark.png": "/schedule-alert-2023/static/media/questionmark_shark.a3d78410077176920bf2.png",
     "static/media/icon_2.png": "/schedule-alert-2023/static/media/icon_2.31d2de0c330699f63adb.png",
-    "static/media/icon_1.png": "/schedule-alert-2023/static/media/icon_1.fc09786ca889fa2ada1a.png",
+    "static/media/dressed_up_shark.png": "/schedule-alert-2023/static/media/dressed_up_shark.2420e406a878b3649f71.png",
+    "static/media/computer_sharks.png": "/schedule-alert-2023/static/media/computer_sharks.fc09786ca889fa2ada1a.png",
+    "static/media/donut_shark.png": "/schedule-alert-2023/static/media/donut_shark.f1aa2fa8dfa324467670.png",
+    "static/media/star_shark.png": "/schedule-alert-2023/static/media/star_shark.430c1a482daec76f71a7.png",
     "static/media/discord.png": "/schedule-alert-2023/static/media/discord.5de04f93d4e03aa4b51c.png",
     "index.html": "/schedule-alert-2023/index.html",
-    "main.c72a6a1c.css.map": "/schedule-alert-2023/static/css/main.c72a6a1c.css.map",
-    "main.d53a813b.js.map": "/schedule-alert-2023/static/js/main.d53a813b.js.map",
+    "main.7db66ffa.css.map": "/schedule-alert-2023/static/css/main.7db66ffa.css.map",
+    "main.13494ffd.js.map": "/schedule-alert-2023/static/js/main.13494ffd.js.map",
     "787.28cb0dcd.chunk.js.map": "/schedule-alert-2023/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c72a6a1c.css",
-    "static/js/main.d53a813b.js"
+    "static/css/main.7db66ffa.css",
+    "static/js/main.13494ffd.js"
   ]
 }
