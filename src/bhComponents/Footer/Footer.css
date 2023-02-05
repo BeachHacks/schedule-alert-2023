@@ -1,0 +1,34 @@
+footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    background-color: var(--neutral-focus);
+    font-family:'Trebuchet MS';
+    color: black;
+    z-index: -1;
+}
+
+.social {
+    text-align:center;
+    padding-top: 1em;
+}
+
+.social a {
+    font-size: 2rem;
+    color: var(--primary-focus);
+    text-align: center;
+}
+
+.social a:hover{
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    padding-bottom: 0.5em;
+}
+
+.footer-divider {
+    width: 80%;
+    border: 2px solid var(--primary-focus);
+    border-radius: 5px;
+}

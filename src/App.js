@@ -4,6 +4,7 @@ import {useState,useEffect, Component} from "react"
 import scheduleData from "./Components/Data/scheduleData.json"
 import Schedule from './Components/Schedule';
 import PopUp from './Components/PopUp';
+import Footer from './bhComponents/Footer/Footer';
 
 function App() {
   const testProxy = "http://localhost:3001"
@@ -172,6 +173,7 @@ function App() {
       {popUp.isClicked &&  <PopUp popUpData={popUp} handleClose_PopUp={handleClose_PopUp}/>}
 
       </header>
+      <Footer />
     </div>
   );
 }
