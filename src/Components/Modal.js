@@ -2,6 +2,8 @@ export default function Modal(props){
     let discordImg = require("./images/discord.png")
     let googleImg = require("./images/google_resize3.png")
 
+    const [google_link, discord_link] = props.link
+
     // let googleImg =``
     return(
         <>

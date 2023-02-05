@@ -156,8 +156,6 @@ function App() {
 
   return (
     <div className="App">
-
-      <button onClick={get_EventsID}>Click me</button>
       <header className="App-header">
       <h1>Schedule Alerts</h1>
       {workshopScheduleState &&
