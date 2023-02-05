@@ -75,11 +75,12 @@
                 "eventType": "Registration",
                 "category" : "",
                 "location" : "TBA",
-                "description" : "",
+                "description" : "TBA",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NGw0N2VoN25pM3FrajIxOTZwaWlzZXFpcWQgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&amp;tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
                     "discord_link" : "https://beachhacks.com"
                 }
+
             },
             {
                 "time" :"2:30PM-3:30PM",
