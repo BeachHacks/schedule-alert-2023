@@ -2,7 +2,11 @@
 import Modal from "./Modal"
 export default function PopUp(props){
     const {popUpData} = props
-    const {eventType, links} = popUpData
+    const {eventType, link} = popUpData
+
+    console.log("Popup Data:" , popUpData)
+
+
 
 
     const buttonContainerStyle={
@@ -69,7 +73,7 @@ export default function PopUp(props){
                 <h1>{popUpData.title}</h1>
                 <h2>Location: {popUpData.location}</h2>
                 <p>{popUpData.description}</p>
-                <Modal links={links}/>
+                <Modal links={link}/>
                 <img src={popUpSticker}  id="popUpImg"/>
                 <br/> <br/>
             </div>
