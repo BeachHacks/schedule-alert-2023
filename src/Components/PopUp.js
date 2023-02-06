@@ -7,10 +7,6 @@ export default function PopUp(props){
     // console.log("Popup data in poppup: ", popUpData)
     // console.log("Pop up data in popUp compnent: ", id)
 
-
-
-
-
     const buttonContainerStyle={
         alignSelf:"end",
         marginRight: "5px"

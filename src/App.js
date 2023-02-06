@@ -1,14 +1,23 @@
 import './App.css';
 import {nanoid} from "nanoid"
-import {useState,useEffect, Component} from "react"
+import {useState,useEffect} from "react"
 import scheduleData from "./Components/Data/scheduleData.json"
 import Schedule from './Components/Schedule';
 import PopUp from './Components/PopUp';
 import Footer from './bhComponents/Footer/Footer';
 
+// import dotenv from "dotenv"
+
+
+
 function App() {
-  const testProxy = "http://localhost:3001"
+  // dotenv.config()
+  // const proxy = process.env.proxy
   // const fs = require("fs")
+
+  const proxy = process.env.REACT_APP_PROXY
+
+  console.log("Proxy: ", proxy)
 
   const handleOpen_PopUp = (event) =>{
     const target = event.currentTarget // * gets target, and its attributes
@@ -49,7 +58,7 @@ function App() {
 
   const testConnection = () =>{ // * used for testing connection between server and app
     console.log("Button clicked")
-    fetch(`${testProxy}/testConnection`)
+    fetch(`${proxy}/testConnection`)
     .then((res) => console.log("result: ", res))
   } // testConnection
   
@@ -93,12 +102,12 @@ function App() {
       },
       body: JSON.stringify({eventID: eventID, objectTag: objectTag})
     }
-    fetch(`${testProxy}/incrementGoogle_click`,requestOptions)
+    fetch(`${proxy}/incrementGoogle_click`,requestOptions)
     .then((response) => console.log("Response from server: ", response) )
   } // incrementGoogle_click
 
   const incrementDiscord_click = () =>{
-    fetch(`${testProxy}/incrementGoogle_click`,{
+    fetch(`${proxy}/incrementGoogle_click`,{
       method: "PUT",
       headers:{
         "Accept" : "application/json",
@@ -121,7 +130,7 @@ function App() {
 
   useEffect( () =>{ // Fetches event data from server
     console.log("API request ")
-    fetch(`${testProxy}/get_eventsID`)
+    fetch(`${proxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
       const workshopDB_Array = db_array[0].data
