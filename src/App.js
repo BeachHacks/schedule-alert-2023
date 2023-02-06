@@ -5,6 +5,7 @@ import scheduleData from "./Components/Data/scheduleData.json"
 import Schedule from './Components/Schedule';
 import PopUp from './Components/PopUp';
 import Footer from './bhComponents/Footer/Footer';
+// import { db } from '../../server/models/event';
 
 // import dotenv from "dotenv"
 
@@ -134,18 +135,21 @@ function App() {
     fetch(`${proxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
-      const workshopDB_Array = db_array[0].data
-      const saturdayDB_Array= db_array[1].data
-      const sundayDB_Array = db_array[2].data
+      console.log("DB ARRAY: ", db_array)
+      // const workshopDB_Array = db_array[0].data
+      // const saturdayDB_Array= db_array[1].data
+      // const sundayDB_Array = db_array[2].data
 
       // console.log("workshop data: ", workshopDB_Array)
+      
+      console.log(db_array.find(db_event => "Lunch" === db_event.name)._id)
 
       // ! objectTag is the tag that is used to query in which type of collection it is inside the DB
       // ! objectTag needs to be replaced when the DB is changes, or restarted back to 0 clicks  
       setWorkshopScheduleState( () =>{
         const returnData = workshopData.map( (event,index) =>({
           ...event,
-          id: workshopDB_Array[index].id,
+          id: db_array.find(db_event => event.title === db_event.name)._id,
           objectTag:"63e019e49b569f7cd868d8da"
           
         }))
@@ -155,7 +159,7 @@ function App() {
       setSaturdayScheduleState( () =>{
         const returnData = saturdayData.map( (event,index) =>({
           ...event,
-          id: saturdayDB_Array[index].id,
+          id: db_array.find(db_event => event.title === db_event.name)._id,
           objectTag: "63e019e49b569f7cd868d8db"
         }))
         return returnData
@@ -164,7 +168,7 @@ function App() {
       setSundayScheduleState( () =>{
         const returnData = sundayData.map( (event,index) =>({
           ...event,
-          id: sundayDB_Array[index].id,
+          id: db_array.find(db_event => event.title === db_event.name)._id,
           objectTag: "63e019e49b569f7cd868d8dc"
         }))
         return returnData
@@ -191,7 +195,7 @@ function App() {
   //   id:nanoid()
   // }))
 
-  
+  console.log("Workshop schedule state: ", workshopScheduleState)
 
 
 

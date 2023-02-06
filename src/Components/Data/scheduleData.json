@@ -172,7 +172,7 @@
         "sundayData" :[
             {
                 "time" :"12:00AM-8:30AM",
-                "title" :"Hacking... (Sunday) ",
+                "title" :"Hacking... (Sunday)",
                 "eventType": "Hacking",
                 "category" : "Code, code, code!",
                 "location" : "TBA",
