@@ -17,13 +17,13 @@ function App() {
 
     // ! Finds the event clicked by user
 
-    sundaySchedule.find(sundayEvent => {
+    sundayScheduleState.find(sundayEvent => {
       if (sundayEvent.id === id){
         eventClicked = sundayEvent
       }
     })
 
-    saturdaySchedule.find(saturdayEvent => {
+    saturdayScheduleState.find(saturdayEvent => {
       if (saturdayEvent.id === id){
         eventClicked = saturdayEvent
       }
@@ -53,7 +53,7 @@ function App() {
     .then((res) => console.log("result: ", res))
   } // testConnection
   
-  const get_EventsID = () =>{
+  const get_EventsID = () =>{ // * testing for api fetch 
     fetch(`${testProxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
@@ -67,7 +67,8 @@ function App() {
       setWorkshopScheduleState( () =>{
         const returnData = workshopData.map( (event,index) =>({
           ...event,
-          id: workshopDB_Array[index].id
+          id: workshopDB_Array[index].id,
+          dbTag:"workshopData" // used for querying 
         }))
 
         console.log("Return Data: ", returnData)
@@ -78,18 +79,33 @@ function App() {
     // .then((data) => console.log("Data: ", data))
   }
 
+  // * API calls
 
+  
+  const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
+    console.log("Anchor tag clicked")
+    // console.log("Event id", eventID)
+    const requestOptions ={ // *PUT request options
+      method: "PUT",
+      headers:{
+        "Accept" : "application/json",
+        "Content-Type" : "application/json"
+      },
+      body: JSON.stringify({id: eventID})
+    }
+    fetch(`${testProxy}/incrementGoogle_click`,requestOptions)
+    .then((response) => console.log("Response from server: ", response) )
+  } // incrementGoogle_click
 
-  const testPut = () =>{
-    fetch("/test",{
+  const incrementDiscord_click = () =>{
+    fetch(`${testProxy}/incrementGoogle_click`,{
       method: "PUT",
       headers:{
         "Accept" : "application/json",
         "Content-Type" : "application/json"
       }
     } )
-  } // testPut
-  
+  } // incrementGoogle_click
   // ! Data without ID
   const {workshopData,tentativeScheduleData} = scheduleData
   const {saturdayData, sundayData} = tentativeScheduleData
@@ -97,16 +113,20 @@ function App() {
   // * States
   const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
   const [workshopScheduleState,setWorkshopScheduleState] = useState(null)
+  const [saturdayScheduleState,setSaturdayScheduleState] = useState(null)
+  const [sundayScheduleState,setSundayScheduleState] = useState(null)
+
+  const [isRendered, setIsRendered] = useState(false)
 
 
-  useEffect( () =>{
+  useEffect( () =>{ // Fetches event data from server
     console.log("API request ")
     fetch(`${testProxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
       const workshopDB_Array = db_array[0].data
-      const saturdayDB_Array= db_array[1]
-      const sundayDB_Array = db_array[2]
+      const saturdayDB_Array= db_array[1].data
+      const sundayDB_Array = db_array[2].data
 
       // console.log("workshop data: ", workshopDB_Array)
 
@@ -117,60 +137,67 @@ function App() {
         }))
         return returnData
       })
+
+      setSaturdayScheduleState( () =>{
+        const returnData = saturdayData.map( (event,index) =>({
+          ...event,
+          id: saturdayDB_Array[index].id
+        }))
+        return returnData
+      })
+
+      setSundayScheduleState( () =>{
+        const returnData = sundayData.map( (event,index) =>({
+          ...event,
+          id: sundayDB_Array[index].id
+        }))
+        return returnData
+      })
+
+      setIsRendered(true)
     })
   },[])
 
   // ! changing normal data to states
-  // const [saturdaySchedule,setSaturdaySchedule] = useState()
-  // const [sundaySchedule, setSundaySchedule] = useState()
+  // * data gotten from local json data
+  // const sundaySchedule = sundayData.map(event => ({
+  //   ...event,
+  //   id:nanoid()
+  // }))
 
+  // const saturdaySchedule = saturdayData.map(event => ({
+  //   ...event,
+  //   id:nanoid()
+  // }))
 
-  // useEffect( () =>{
-
-  // })
-
+  // const workshopSchedule = workshopData.map(event => ({
+  //   ...event,
+  //   id:nanoid()
+  // }))
 
   
 
 
-  // * Adds and id for each event
-  // ! NEED to attatch id from DB to here; use useEffect() here when attatching the id
-  const sundaySchedule = sundayData.map(event => ({
-    ...event,
-    id:nanoid()
-  }))
-
-  const saturdaySchedule = saturdayData.map(event => ({
-    ...event,
-    id:nanoid()
-  }))
-
-  const workshopSchedule = workshopData.map(event => ({
-    ...event,
-    id:nanoid()
-  }))
-
-  // console.log("Workshop data: ", workshopSchedule)
-
-  // console.log("state workshop:", workshopScheduleState)
-  // console.log("regualr workshop: ", workshopSchedule)
 
   return (
     <div className="App">
       <header className="App-header">
       <h1>Schedule Alerts</h1>
-      {workshopScheduleState &&
+      {isRendered && 
         <Schedule 
         workshopSchedule={workshopScheduleState} 
-        saturdaySchedule={saturdaySchedule}
-        sundaySchedule={sundaySchedule}
+        saturdaySchedule={saturdayScheduleState}
+        sundaySchedule={sundayScheduleState}
         handleOpen_PopUp={handleOpen_PopUp}
         nanoid={nanoid}
         />
       }
 
 
-      {popUp.isClicked &&  <PopUp popUpData={popUp} handleClose_PopUp={handleClose_PopUp}/>}
+      {popUp.isClicked &&  
+      <PopUp popUpData={popUp} 
+      handleClose_PopUp={handleClose_PopUp} 
+      modalHandlers={[incrementGoogle_click,incrementDiscord_click]}/>}
 
       </header>
       <Footer />

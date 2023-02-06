@@ -3,16 +3,16 @@ export default function Modal(props){
     let googleImg = require("./images/google_resize3.png")
 
     const {google_link, discord_link}= props.links
-    console.log("google_link: ", google_link)
+    const [incrementGoogle_click, incrementDiscord_click] = props.modalHandlers
+    const {eventID} = props
 
-    // console.log("Links: ", props.link)
+    // console.log("eventID in modal: ", eventID)
 
-    // let googleImg =``
     return(
         <>
             <h2 id="modal--title">Get Notified</h2>
             <div id="modal--container"style={{display:"flex", justifyContent:"center"}}>
-                <a href={google_link} target="_blank">
+                <a href={google_link} target="_blank" onClick={() => incrementGoogle_click(eventID)}>
                     <img src={googleImg} />
                     <h3>Google</h3>
                 </a>

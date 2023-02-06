@@ -2,9 +2,11 @@
 import Modal from "./Modal"
 export default function PopUp(props){
     const {popUpData} = props
-    const {eventType, link} = popUpData
+    const {eventType, link, id} = popUpData
 
-    console.log("Popup Data:" , popUpData)
+    // console.log("Popup data in poppup: ", popUpData)
+    // console.log("Pop up data in popUp compnent: ", id)
+
 
 
 
@@ -73,7 +75,7 @@ export default function PopUp(props){
                 <h1>{popUpData.title}</h1>
                 <h2>Location: {popUpData.location}</h2>
                 <p>{popUpData.description}</p>
-                <Modal links={link}/>
+                <Modal links={link} modalHandlers={props.modalHandlers} eventID={id}/>
                 <img src={popUpSticker}  id="popUpImg"/>
                 <br/> <br/>
             </div>
