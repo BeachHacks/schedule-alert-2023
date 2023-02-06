@@ -7,19 +7,16 @@ import PopUp from './Components/PopUp';
 import Footer from './bhComponents/Footer/Footer';
 // import { db } from '../../server/models/event';
 
-// import dotenv from "dotenv"
+
 
 
 
 function App() {
-  // dotenv.config()
-  // const proxy = process.env.proxy
-  // const fs = require("fs")
+  // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
+  const proxy = process.env.REACT_APP_PROXY // ! for production build
+  // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
 
-  // const proxy = process.env.REACT_APP_PROXY // ! for production build
-  const proxy = "http://localhost:3001" // * for local environment
-
-  console.log("Proxy: ", proxy)
+  // const proxy = "http://localhost:3001" // * for local environment
 
   const handleOpen_PopUp = (event) =>{
     const target = event.currentTarget // * gets target, and its attributes
@@ -76,7 +73,7 @@ function App() {
   //     console.log("workshop data: ", workshopDB_Array)
 
   //     setWorkshopScheduleState( () =>{
-  //       const returnData = workshopData.map( (event,index) =>({
+  //       const returnData = workshopData.map( (event) =>({
   //         ...event,
   //         id: workshopDB_Array[index].id,
   //         dbTag:"workshopData" // used for querying 
@@ -92,17 +89,16 @@ function App() {
 
   // * API calls
 
-  const incrementGoogle_click = (eventID,objectTag) =>{ // inside modal component when google link is pressed
+  const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
     console.log("Anchor tag clicked")
     // console.log("Event id", eventID)
-    console.log("Object Tag: ", objectTag)
     const requestOptions ={ // *PUT request options
       method: "PUT",
       headers:{
         "Accept" : "application/json",
         "Content-Type" : "application/json"
       },
-      body: JSON.stringify({eventID: eventID, objectTag: objectTag})
+      body: JSON.stringify({eventID: eventID})
     }
     fetch(`${proxy}/incrementGoogle_click`,requestOptions)
     .then((response) => console.log("Response from server: ", response) )
@@ -135,41 +131,30 @@ function App() {
     fetch(`${proxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
-      console.log("DB ARRAY: ", db_array)
-      // const workshopDB_Array = db_array[0].data
-      // const saturdayDB_Array= db_array[1].data
-      // const sundayDB_Array = db_array[2].data
-
-      // console.log("workshop data: ", workshopDB_Array)
-      
-      console.log(db_array.find(db_event => "Lunch" === db_event.name)._id)
 
       // ! objectTag is the tag that is used to query in which type of collection it is inside the DB
       // ! objectTag needs to be replaced when the DB is changes, or restarted back to 0 clicks  
       setWorkshopScheduleState( () =>{
-        const returnData = workshopData.map( (event,index) =>({
+        const returnData = workshopData.map( (event) =>({
           ...event,
-          id: db_array.find(db_event => event.title === db_event.name)._id,
-          objectTag:"63e019e49b569f7cd868d8da"
+          id: db_array.find(db_event => event.title === db_event.name)._id
           
         }))
         return returnData
       })
 
       setSaturdayScheduleState( () =>{
-        const returnData = saturdayData.map( (event,index) =>({
+        const returnData = saturdayData.map( (event) =>({
           ...event,
-          id: db_array.find(db_event => event.title === db_event.name)._id,
-          objectTag: "63e019e49b569f7cd868d8db"
+          id: db_array.find(db_event => event.title === db_event.name)._id
         }))
         return returnData
       })
 
       setSundayScheduleState( () =>{
-        const returnData = sundayData.map( (event,index) =>({
+        const returnData = sundayData.map( (event) =>({
           ...event,
-          id: db_array.find(db_event => event.title === db_event.name)._id,
-          objectTag: "63e019e49b569f7cd868d8dc"
+          id: db_array.find(db_event => event.title === db_event.name)._id
         }))
         return returnData
       })
