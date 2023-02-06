@@ -7,16 +7,12 @@ import PopUp from './Components/PopUp';
 import Footer from './bhComponents/Footer/Footer';
 // import { db } from '../../server/models/event';
 
-
-
-
-
 function App() {
   // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
-  const proxy = process.env.REACT_APP_PROXY // ! for production build
+  // const proxy = process.env.REACT_APP_PROXY // ! for production build
   // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
 
-  // const proxy = "http://localhost:3001" // * for local environment
+  const proxy = "http://localhost:3001" // * for local environment
 
   const handleOpen_PopUp = (event) =>{
     const target = event.currentTarget // * gets target, and its attributes
@@ -47,8 +43,6 @@ function App() {
       ...eventClicked,
       isClicked: true
     })
-
-
   } // handleOpen_PopUp
 
   const handleClose_PopUp = () =>{
@@ -60,32 +54,6 @@ function App() {
     fetch(`${proxy}/testConnection`)
     .then((res) => console.log("result: ", res))
   } // testConnection
-  
-  // const get_EventsID = () =>{ // * testing for api fetch 
-  //   fetch(`${testProxy}/get_eventsID`)
-  //   .then((res) => res.json())
-  //   .then((db_array) => {
-      
-  //     const workshopDB_Array = db_array[0].data
-  //     const saturdayDB_Array= db_array[1]
-  //     const sundayDB_Array = db_array[2]
-
-  //     console.log("workshop data: ", workshopDB_Array)
-
-  //     setWorkshopScheduleState( () =>{
-  //       const returnData = workshopData.map( (event) =>({
-  //         ...event,
-  //         id: workshopDB_Array[index].id,
-  //         dbTag:"workshopData" // used for querying 
-  //       }))
-
-  //       console.log("Return Data: ", returnData)
-  //       return returnData
-  //     })
-      
-  //   })
-  //   // .then((data) => console.log("Data: ", data))
-  // }
 
   // * API calls
 
@@ -179,9 +147,6 @@ function App() {
   //   ...event,
   //   id:nanoid()
   // }))
-
-  console.log("Workshop schedule state: ", workshopScheduleState)
-
 
 
   return (
