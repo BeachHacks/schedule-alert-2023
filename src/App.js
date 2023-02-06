@@ -53,45 +53,45 @@ function App() {
     .then((res) => console.log("result: ", res))
   } // testConnection
   
-  const get_EventsID = () =>{ // * testing for api fetch 
-    fetch(`${testProxy}/get_eventsID`)
-    .then((res) => res.json())
-    .then((db_array) => {
+  // const get_EventsID = () =>{ // * testing for api fetch 
+  //   fetch(`${testProxy}/get_eventsID`)
+  //   .then((res) => res.json())
+  //   .then((db_array) => {
       
-      const workshopDB_Array = db_array[0].data
-      const saturdayDB_Array= db_array[1]
-      const sundayDB_Array = db_array[2]
+  //     const workshopDB_Array = db_array[0].data
+  //     const saturdayDB_Array= db_array[1]
+  //     const sundayDB_Array = db_array[2]
 
-      console.log("workshop data: ", workshopDB_Array)
+  //     console.log("workshop data: ", workshopDB_Array)
 
-      setWorkshopScheduleState( () =>{
-        const returnData = workshopData.map( (event,index) =>({
-          ...event,
-          id: workshopDB_Array[index].id,
-          dbTag:"workshopData" // used for querying 
-        }))
+  //     setWorkshopScheduleState( () =>{
+  //       const returnData = workshopData.map( (event,index) =>({
+  //         ...event,
+  //         id: workshopDB_Array[index].id,
+  //         dbTag:"workshopData" // used for querying 
+  //       }))
 
-        console.log("Return Data: ", returnData)
-        return returnData
-      })
+  //       console.log("Return Data: ", returnData)
+  //       return returnData
+  //     })
       
-    })
-    // .then((data) => console.log("Data: ", data))
-  }
+  //   })
+  //   // .then((data) => console.log("Data: ", data))
+  // }
 
   // * API calls
 
-  
-  const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
+  const incrementGoogle_click = (eventID,objectTag) =>{ // inside modal component when google link is pressed
     console.log("Anchor tag clicked")
     // console.log("Event id", eventID)
+    console.log("Object Tag: ", objectTag)
     const requestOptions ={ // *PUT request options
       method: "PUT",
       headers:{
         "Accept" : "application/json",
         "Content-Type" : "application/json"
       },
-      body: JSON.stringify({id: eventID})
+      body: JSON.stringify({eventID: eventID, objectTag: objectTag})
     }
     fetch(`${testProxy}/incrementGoogle_click`,requestOptions)
     .then((response) => console.log("Response from server: ", response) )
@@ -130,10 +130,14 @@ function App() {
 
       // console.log("workshop data: ", workshopDB_Array)
 
+      // ! objectTag is the tag that is used to query in which type of collection it is inside the DB
+      // ! objectTag needs to be replaced when the DB is changes, or restarted back to 0 clicks  
       setWorkshopScheduleState( () =>{
         const returnData = workshopData.map( (event,index) =>({
           ...event,
-          id: workshopDB_Array[index].id
+          id: workshopDB_Array[index].id,
+          objectTag:"63e019e49b569f7cd868d8da"
+          
         }))
         return returnData
       })
@@ -141,7 +145,8 @@ function App() {
       setSaturdayScheduleState( () =>{
         const returnData = saturdayData.map( (event,index) =>({
           ...event,
-          id: saturdayDB_Array[index].id
+          id: saturdayDB_Array[index].id,
+          objectTag: "63e019e49b569f7cd868d8db"
         }))
         return returnData
       })
@@ -149,7 +154,8 @@ function App() {
       setSundayScheduleState( () =>{
         const returnData = sundayData.map( (event,index) =>({
           ...event,
-          id: sundayDB_Array[index].id
+          id: sundayDB_Array[index].id,
+          objectTag: "63e019e49b569f7cd868d8dc"
         }))
         return returnData
       })
