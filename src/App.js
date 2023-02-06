@@ -15,7 +15,8 @@ function App() {
   // const proxy = process.env.proxy
   // const fs = require("fs")
 
-  const proxy = process.env.REACT_APP_PROXY
+  // const proxy = process.env.REACT_APP_PROXY // ! for production build
+  const proxy = "http://localhost:3001" // * for local environment
 
   console.log("Proxy: ", proxy)
 
@@ -207,6 +208,7 @@ function App() {
         nanoid={nanoid}
         />
       }
+      {!isRendered && <h2>Loading...</h2>}
 
 
       {popUp.isClicked &&  

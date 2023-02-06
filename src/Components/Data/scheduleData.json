@@ -156,7 +156,7 @@
             },
             {
                 "time" :"9:30PM-11:59AM",
-                "title" :"Hacking...",
+                "title" :"Hacking... (Saturday)",
                 "eventType": "Hacking",
                 "category" : "Code, code, code!",
                 "location" : "TBA",
@@ -172,7 +172,7 @@
         "sundayData" :[
             {
                 "time" :"12:00AM-8:30AM",
-                "title" :"Hacking... ",
+                "title" :"Hacking... (Sunday) ",
                 "eventType": "Hacking",
                 "category" : "Code, code, code!",
                 "location" : "TBA",
