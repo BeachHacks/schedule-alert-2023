@@ -2,7 +2,7 @@
 import Modal from "./Modal"
 export default function PopUp(props){
     const {popUpData} = props
-    const {eventType} = popUpData
+    const {eventType, links} = popUpData
 
 
     const buttonContainerStyle={
@@ -13,7 +13,6 @@ export default function PopUp(props){
     const closeButtonSrc = require("./images/remove_resize1.png")
     let popUpSticker
 
-    console.log("event type:", eventType)
 
     switch (eventType){
         case "Registration":
@@ -70,7 +69,7 @@ export default function PopUp(props){
                 <h1>{popUpData.title}</h1>
                 <h2>Location: {popUpData.location}</h2>
                 <p>{popUpData.description}</p>
-                <Modal/>
+                <Modal links={links}/>
                 <img src={popUpSticker}  id="popUpImg"/>
                 <br/> <br/>
             </div>
