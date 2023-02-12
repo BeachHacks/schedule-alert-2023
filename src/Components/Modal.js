@@ -4,15 +4,13 @@ export default function Modal(props){
 
     const {google_link, discord_link}= props.links
     const [incrementGoogle_click, incrementDiscord_click] = props.modalHandlers
-    const {eventID, objectTag} = props
-
-    console.log("google link: ", google_link)
+    const {eventID} = props
 
     return(
         <>
             <h2 id="modal--title">Get Notified</h2>
             <div id="modal--container"style={{display:"flex", justifyContent:"center"}}>
-                <a href={google_link} target="_blank" onClick={() => incrementGoogle_click(eventID, objectTag)}>
+                <a href={google_link} target="_blank" onClick={() => incrementGoogle_click(eventID)}>
                     <img src={googleImg} />
                     <h3>Google</h3>
                 </a>

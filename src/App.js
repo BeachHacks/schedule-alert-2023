@@ -9,10 +9,10 @@ import Footer from './bhComponents/Footer/Footer';
 
 function App() {
   // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
-  const proxy = process.env.REACT_APP_PROXY // ! for production build
+  // const proxy = process.env.REACT_APP_PROXY // ! for production build
   // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
 
-  // const proxy = "http://localhost:3001" // * for local environment
+  const proxy = "http://localhost:3001" // * for local environment
 
   const handleOpen_PopUp = (event) =>{
     const target = event.currentTarget // * gets target, and its attributes
@@ -58,7 +58,6 @@ function App() {
   // * API calls
 
   const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
-    console.log("Anchor tag clicked")
     // console.log("Event id", eventID)
     const requestOptions ={ // *PUT request options
       method: "PUT",
