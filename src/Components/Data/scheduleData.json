@@ -1,7 +1,7 @@
 {
     "workshopData": [
         {
-            "time" :"3:30PM-4:30PM",
+            "time" :"4:00PM-5:00PM",
             "day": "Saturday",
             "title" :"GitHub Workshop",
             "category" : "Source Control",
@@ -14,7 +14,7 @@
             }
         },
         {
-            "time" : "6:30PM-7:30PM",
+            "time" : "7:00PM-8:00PM",
             "day": "Saturday",
             "title" : "Video Game Development",
             "eventType": "Workshop",
@@ -27,8 +27,8 @@
             }
         },
         {
-            "time" : "9:30AM-10:30AM",
-            "day": "Sunday",
+            "time" : "5:00PM-6:00PM",
+            "day": "Saturday",
             "title" : "Hardware Workshop",
             "eventType": "Workshop",
             "category" : "Arduino",
@@ -40,7 +40,7 @@
             }
         },
         {
-            "time" : "10:30AM-11:30AM",
+            "time" : "11:00AM-12:00PM",
             "day": "Sunday",
             "title" : "LinkedIn Workshop",
             "eventType": "LinkedIn",
@@ -53,7 +53,7 @@
             }
         },
         {
-            "time" : "12:30PM-1:30PM",
+            "time" : "1:00PM-2:00PM",
             "day": "Sunday",
             "title" : "Technical Interview Workshop",
             "eventType": "Workshop",
@@ -70,7 +70,7 @@
     "tentativeScheduleData":{
         "saturdayData": [
             {
-                "time" :"1:30PM-2:30PM",
+                "time" :"2:00PM-3:00PM",
                 "title" :"Registration / Team Matching Session",
                 "eventType": "Registration",
                 "category" : "",
@@ -83,7 +83,7 @@
 
             },
             {
-                "time" :"2:30PM-3:30PM",
+                "time" :"3:00PM-4:00PM",
                 "title" :"Opening Ceremony",
                 "eventType": "Ceremony",
                 "category" : "Michael Botsko",
@@ -95,7 +95,7 @@
                 }
             },
             {
-                "time" :"3:30PM-4:30PM",
+                "time" :"4:00PM-4:00PM",
                 "title" :"Hacking Begins!",
                 "eventType": "Hackathon",
                 "category" : "Event Start",
@@ -107,19 +107,7 @@
                 }
             },
             {
-                "time" :"4:30PM-5:30PM",
-                "title" :"Cup Stacking",
-                "category" : "Jolene & Reyna (Operations)",
-                "eventType": "Social",
-                "location" : "TBA",
-                "description" : "Wanna improve your motor skills and hand-eye coordination? We have cup stacking game waiting for you to play against other participants.",
-                "link": {
-                    "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmY3Y2dvbjMxdmY0OGs0MDUzcHUza2xlb2sgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
-                }
-            },
-            {
-                "time" :"5:30PM-6:30PM",
+                "time" :"6:00PM-7:00PM",
                 "title" :"Dinner",
                 "eventType": "Food",
                 "category" : "",
@@ -131,7 +119,7 @@
                 }
             },
             {
-                "time" :"7:30PM-8:30PM",
+                "time" :"8:00PM-9:00PM",
                 "title" :"How to get most of your hackathon project to land your dream job",
                 "eventType": "Keynote-Speaker",
                 "category" : "Chrisitan Bourdeau",
@@ -143,7 +131,7 @@
                 }
             },
             {
-                "time" :"8:30PM-9:30PM",
+                "time" :"9:00PM-10:00PM",
                 "title" :"Social/Networking",
                 "eventType": "Social",
                 "category" : "Mark & Reyna (Operations)",
@@ -155,14 +143,14 @@
                 }
             },
             {
-                "time" :"9:30PM-11:59AM",
+                "time" :"10:00PM-11:59AM",
                 "title" :"Hacking... (Saturday)",
                 "eventType": "Hacking",
                 "category" : "Code, code, code!",
                 "location" : "TBA",
                 "description" : "If you need any information regarding workshops, please don’t hesitate to ask one of the volunteers. Have fun coding!",
                 "link": {
-                    "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MWlycTE1bGppdXF0MzdmYWxsdXFwYWw0bjkgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
+                    "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NTNvZTA2c284b2ZzM3ZoazdlM2ltbGNsY2ggMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
                     "discord_link" : "https://beachhacks.com"
                 }
             }
@@ -171,19 +159,19 @@
 
         "sundayData" :[
             {
-                "time" :"12:00AM-8:30AM",
+                "time" :"12:00AM-9:00AM",
                 "title" :"Hacking... (Sunday)",
                 "eventType": "Hacking",
                 "category" : "Code, code, code!",
                 "location" : "TBA",
                 "description" : "If you need any information regarding workshops, please don’t hesitate to ask one of the volunteers. Have fun coding!",
                 "link": {
-                    "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGN2anNicnNmcW5oZDBtMnNjdmM2MmtsdjYgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
+                    "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MWlycTE1bGppdXF0MzdmYWxsdXFwYWw0bjkgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
                     "discord_link" : "https://beachhacks.com"
                 }
             },
             {
-                "time" :"8:30AM-9:30AM",
+                "time" :"9:00AM-10:00AM",
                 "title" :"Breakfast",
                 "eventType": "Food",
                 "category" : "",
@@ -195,7 +183,19 @@
                 }
             },
             {
-                "time" :"11:30AM-12:30PM",
+                "time" :"10:00AM-11:00AM",
+                "title" :"Cup Stacking",
+                "category" : "Jolene & Reyna (Operations)",
+                "eventType": "Social",
+                "location" : "TBA",
+                "description" : "Wanna improve your motor skills and hand-eye coordination? We have cup stacking game waiting for you to play against other participants.",
+                "link": {
+                    "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmY3Y2dvbjMxdmY0OGs0MDUzcHUza2xlb2sgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
+                    "discord_link" : "https://beachhacks.com"
+                }
+            },
+            {
+                "time" :"12:00PM-1:00PM",
                 "title" :"Lunch",
                 "eventType": "Food",
                 "category" : "",
@@ -207,7 +207,7 @@
                 }
             },
             {
-                "time" :"1:30PM-3:00PM",
+                "time" :"2:00PM-3:30PM",
                 "title" :"Alumni Career Panel",
                 "eventType": "Career-Panel",
                 "category" : "Shri (Operations)",
@@ -219,7 +219,7 @@
                 }
             },
             {
-                "time" :"4:00PM-4:30PM",
+                "time" :"4:00PM-5:00PM",
                 "title" :"Hacking Ends! (4PM) / Judging Begins",
                 "eventType": "Judging",
                 "category" : "Mark & Reyna (Operations)",
@@ -231,7 +231,7 @@
                 }
             },
             {
-                "time" :"4:30PM-5:30PM",
+                "time" :"5:00PM-6:00PM",
                 "title" :"Closing Ceremony",
                 "eventType": "Ceremony",
                 "category" : "",
