@@ -317,9 +317,36 @@ h2{
 }
 
 .header{
+  display: flex;
+  flex-direction: column;
+
   width: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background-color: #A0CFED;
 }
+
+.header > h3{
+  color:black
+}
+
+.header > a{
+  margin-bottom: 8px;
+  padding-top: 5px;
+  color: white;
+  font-size: 13px;
+}
+
+.header > a::after{
+  color: white;
+}
+
+.header--logo{
+  scale: 60%;
+  margin-bottom: -20px;
+}
+
+
 
 
 
@@ -328,7 +355,7 @@ h2{
   margin-top: -80px;
 }
 #modal--container img{
-  scale:50%
+  scale:60%
 }
 
 #modal--container h3{
