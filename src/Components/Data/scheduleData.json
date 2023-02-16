@@ -95,7 +95,7 @@
                 }
             },
             {
-                "time" :"4:00PM-4:00PM",
+                "time" :"4:00PM",
                 "title" :"Hacking Begins!",
                 "eventType": "Hackathon",
                 "category" : "Event Start",

@@ -4,15 +4,16 @@ import {useState,useEffect} from "react"
 import scheduleData from "./Components/Data/scheduleData.json"
 import Schedule from './Components/Schedule';
 import PopUp from './Components/PopUp';
+import Header from "./Components/Header"
 import Footer from './bhComponents/Footer/Footer';
 // import { db } from '../../server/models/event';
 
 function App() {
   // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
-  const proxy = process.env.REACT_APP_PROXY // ! for production build
+  // const proxy = process.env.REACT_APP_PROXY // ! for production build
   // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
 
-  // const proxy = "http://localhost:3001" // * for local environment
+  const proxy = "http://localhost:3001" // * for local environment
 
   const handleOpen_PopUp = (event) =>{
     const target = event.currentTarget // * gets target, and its attributes
@@ -94,7 +95,6 @@ function App() {
 
 
   useEffect( () =>{ // Fetches event data from server
-    console.log("API request ")
     fetch(`${proxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
@@ -151,7 +151,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Schedule Alerts</h1>
+      <Header/>
       {isRendered && 
         <Schedule 
         workshopSchedule={workshopScheduleState} 

@@ -63,7 +63,7 @@ export default function Schedule(props){
     
     return (
         <div>
-            <h2>Tentative Schedule</h2>
+            {/* <h2>Tentative Schedule</h2> */} 
             {tentativeSchedule}
 
             <h2>Workshop Events</h2>
