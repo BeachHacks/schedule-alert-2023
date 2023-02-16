@@ -23,6 +23,10 @@
 
   }
 
+  .header > a{
+    scale: 80%;
+  }
+
   .event--description{
     display: none;
   }
@@ -331,24 +335,13 @@ h2{
 }
 
 .header > a{
-  margin-bottom: 14px;
-  padding-top: 5px;
   color: white;
   font-family:"Fredoka One";
 }
 
-.header > a::after{
-  color: white;
-}
-
 .header--logo{
-  scale: 60%;
-  margin-bottom: -20px;
+  scale: 50%;
 }
-
-
-
-
 
 /** For Camrine's CSS */
 #modal--container{

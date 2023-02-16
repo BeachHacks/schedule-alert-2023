@@ -6,7 +6,8 @@ export default function Header(){
     return(
         <div className="header">
             <img src={logo} className="header--logo"/>
-            <a href={BeachHacks_link}> BeachHacks </a>
+            <a href={BeachHacks_link} target="_blank"> BeachHacks </a>
+            <br/>
         </div>
     )
 }
