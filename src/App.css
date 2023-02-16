@@ -286,7 +286,6 @@ h2{
 
   scale: 45%;
   max-width: 800px;
-  /* max-height: 1300px; */
 }
 
 .popup--container p{
@@ -304,7 +303,6 @@ h2{
 }
 
 .popup--container  button:hover{
-  /* background-color: #bddff5 ; */
   opacity: .3;
   cursor:pointer !important
 }
@@ -325,8 +323,8 @@ h2{
   flex-direction: column;
 
   width: 100%;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
   background-color: #A0CFED;
 }
 

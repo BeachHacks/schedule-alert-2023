@@ -62,7 +62,7 @@ export default function PopUp(props){
             break
 
         default:
-            popUpSticker =  require("./images/sharks_colored.png")
+            popUpSticker =  require("./images/computer_sharks.png")
     }
 
     return(
