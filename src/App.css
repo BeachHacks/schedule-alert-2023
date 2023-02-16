@@ -339,7 +339,7 @@ h2{
   font-family:"Fredoka One";
 }
 
-.header > a:visited{
+.header > a:hover{
   color:white
 }
 
