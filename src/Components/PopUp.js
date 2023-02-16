@@ -12,7 +12,7 @@ export default function PopUp(props){
         marginRight: "5px"
     }
 
-    const closeButtonSrc = require("./images/remove_resize1.png")
+    const closeButtonSrc = require("./images/remove_button.png")
     let popUpSticker
 
 
@@ -37,17 +37,18 @@ export default function PopUp(props){
             popUpSticker = require("./images/donut_shark.png")
             break
 
-        case "Keynote-Speaker":
-            popUpSticker = require("./images/glasses_shark.png")
-            break
+        // case "Keynote-Speaker":
+        //     popUpSticker = require("./images/glasses_shark.png")
+        //     break
 
         case "Social":
             popUpSticker = require("./images/sharks_conversating.png")
             break
 
         case "Career-Panel":
-            popUpSticker = require("./images/questionmark_shark.png")
+            popUpSticker = require("./images/dressed_up_shark.png")
             break
+
         case "LinkedIn":
             popUpSticker = require("./images/linkedin_shark.png")
             break
@@ -61,7 +62,7 @@ export default function PopUp(props){
             break
 
         default:
-            popUpSticker =  require("./images/icon_2.png")
+            popUpSticker =  require("./images/sharks_colored.png")
     }
 
     return(
