@@ -10,10 +10,10 @@ import Footer from './bhComponents/Footer/Footer';
 
 function App() {
   // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
-  // const proxy = process.env.REACT_APP_PROXY // ! for production build
+  const proxy = process.env.REACT_APP_PROXY // ! for production build
   // ! ENVIRONMENT VARIABLES FOR PRODUCTION BUILD
 
-  const proxy = "http://localhost:3001" // * for local environment
+  // const proxy = "http://localhost:3001" // * for local environment
 
   const handleOpen_PopUp = (event) =>{
     const target = event.currentTarget // * gets target, and its attributes
