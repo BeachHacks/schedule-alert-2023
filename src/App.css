@@ -331,10 +331,10 @@ h2{
 }
 
 .header > a{
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   padding-top: 5px;
   color: white;
-  font-size: 13px;
+  font-family:"Fredoka One";
 }
 
 .header > a::after{
