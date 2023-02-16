@@ -335,8 +335,12 @@ h2{
 }
 
 .header > a{
-  color: white;
+  color: #496fff;
   font-family:"Fredoka One";
+}
+
+.header > a:visited{
+  color:white
 }
 
 .header--logo{
