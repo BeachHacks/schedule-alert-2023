@@ -332,12 +332,13 @@ h2{
   color:black
 }
 
-.header > a{
+.header  a{
   color: #496fff;
   font-family:"Fredoka One";
+  width: 100%;
 }
 
-.header > a:hover{
+.header a:hover{
   color:white
 }
 

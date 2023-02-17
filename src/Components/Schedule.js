@@ -40,12 +40,6 @@ export default function Schedule(props){
         </div>
         )
     }
-
-    /*
-    schedule--event --> event--container
-    time --> event--time
-    title --> event--title ...
-    */
     
     const workshopEvents = props.workshopSchedule.map(event => (
         <div className="event--table"  key={event.id} onClick={props.handleOpen_PopUp} id={event.id} >
