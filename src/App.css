@@ -327,8 +327,8 @@ h2{
   flex-direction: column;
 
   width: 100%;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
   background-color: #49aeed;
 }
 
