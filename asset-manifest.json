@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a85493d6.css",
-    "main.js": "/static/js/main.8de120ef.js",
+    "main.css": "/static/css/main.08e6d5dd.css",
+    "main.js": "/static/js/main.0838e03a.js",
     "static/js/787.8fa81337.chunk.js": "/static/js/787.8fa81337.chunk.js",
     "static/media/sharks_conversating.png": "/static/media/sharks_conversating.c70700b39e368b288e29.png",
+    "static/media/BH_7-0.png": "/static/media/BH_7-0.e250093c5679da65f36c.png",
     "static/media/boba_sharks.png": "/static/media/boba_sharks.1a7d4ea133eedeb66c1e.png",
-    "static/media/glasses_shark.png": "/static/media/glasses_shark.3359b04cf6e319c3df34.png",
     "static/media/linkedin_shark.png": "/static/media/linkedin_shark.a35ac9395bf3fec00403.png",
     "static/media/judge_sharks.png": "/static/media/judge_sharks.9fe909803e85ad383898.png",
-    "static/media/questionmark_shark.png": "/static/media/questionmark_shark.a3d78410077176920bf2.png",
-    "static/media/icon_2.png": "/static/media/icon_2.31d2de0c330699f63adb.png",
     "static/media/dressed_up_shark.png": "/static/media/dressed_up_shark.2420e406a878b3649f71.png",
     "static/media/computer_sharks.png": "/static/media/computer_sharks.fc09786ca889fa2ada1a.png",
     "static/media/donut_shark.png": "/static/media/donut_shark.f1aa2fa8dfa324467670.png",
     "static/media/discord.png": "/static/media/discord.5de04f93d4e03aa4b51c.png",
     "index.html": "/index.html",
-    "main.a85493d6.css.map": "/static/css/main.a85493d6.css.map",
-    "main.8de120ef.js.map": "/static/js/main.8de120ef.js.map",
+    "main.08e6d5dd.css.map": "/static/css/main.08e6d5dd.css.map",
+    "main.0838e03a.js.map": "/static/js/main.0838e03a.js.map",
     "787.8fa81337.chunk.js.map": "/static/js/787.8fa81337.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a85493d6.css",
-    "static/js/main.8de120ef.js"
+    "static/css/main.08e6d5dd.css",
+    "static/js/main.0838e03a.js"
   ]
 }
