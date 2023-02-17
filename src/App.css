@@ -23,8 +23,8 @@
 
   }
 
-  .header > a{
-    scale: 80%;
+  #header--link{
+    scale: 70% !important;
   }
 
   .event--description{
@@ -112,6 +112,10 @@
 
   .popup--container{
     scale:40% !important
+  }
+
+  #header--link{
+    scale: 60% !important;
   }
 
 }
@@ -335,11 +339,15 @@ h2{
 .header  a{
   color: #496fff;
   font-family:"Fredoka One";
-  width: 100%;
+
+  background-color: white;
+  padding:5px;
+  border-radius: 10px;;
 }
 
 .header a:hover{
-  color:white
+  color:white;
+  background-color: #496fff ;
 }
 
 .header--logo{
