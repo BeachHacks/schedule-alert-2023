@@ -58,64 +58,72 @@ function App() {
 
 
   // * for localStorage
-
-  const instantiateEvent_in_LocalStorage = (id) =>{
+  const instantiateEvent_in_LocalStorage = (id) =>{ // ! returns event object in localStorage
     const isInsantiated = window.localStorage.getItem(id) === null ? false : true // see if event exists in local storage
-    
 
     if (!isInsantiated){
-      console.log("Insantiate")
       const objectProperties = {
-        isGoogleClick: false,
-        isDiscordClick: false
+        isGoogleClicked: false,
+        isDiscordClicked: false
       }
       window.localStorage.setItem(id, JSON.stringify(objectProperties) )
     }
+
+    return JSON.parse(window.localStorage.getItem(id))
   }
 
   const setProperty_in_LocalStorage = (id,linkType) =>{
     const eventProperty = JSON.parse(window.localStorage.getItem(id))
-    console.log("event: ", eventProperty)
     if (linkType === "google"){
-      eventProperty.isGoogleClick = true
-      window.localStorage.setItem(id, JSON.stringify(eventProperty))
+      eventProperty.isGoogleClicked = true
+
     }
     else{
-      eventProperty.isDiscordClick = true
-      window.localStorage.setItem(id, JSON.stringify(eventProperty))
+      eventProperty.isDiscordClicked = true
     }
+
+    window.localStorage.setItem(id, JSON.stringify(eventProperty))
   }
 
   // * API calls
-
   const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
-    instantiateEvent_in_LocalStorage(eventID)
-    setProperty_in_LocalStorage(eventID, "google")
+    const eventObject = instantiateEvent_in_LocalStorage(eventID)
+    const isClicked = eventObject.isGoogleClicked  
 
-    console.log("local storage: ", window.localStorage)
-    const requestOptions ={ // *PUT request options
-      method: "PUT",
-      headers:{
-        "Accept" : "application/json",
-        "Content-Type" : "application/json"
-      },
-      body: JSON.stringify({eventID: eventID})
+    if (!isClicked){
+      setProperty_in_LocalStorage(eventID, "google")
+      const requestOptions ={ // *PUT request options
+        method: "PUT",
+        headers:{
+          "Accept" : "application/json",
+          "Content-Type" : "application/json"
+        },
+        body: JSON.stringify({eventID: eventID})
+      } // requestOptions var
+  
+      fetch(`${proxy}/incrementGoogle_click`,requestOptions)
     }
-    fetch(`${proxy}/incrementGoogle_click`,requestOptions)
-    .then((response) => console.log("Response from server: ", response) )
+
   } // incrementGoogle_click
 
   const incrementDiscord_click = (eventID) =>{
-    instantiateEvent_in_LocalStorage(eventID)
-    setProperty_in_LocalStorage(eventID, "discord")
-    console.log("local storage: ", window.localStorage)
-    // fetch(`${proxy}/incrementGoogle_click`,{
-    //   method: "PUT",
-    //   headers:{
-    //     "Accept" : "application/json",
-    //     "Content-Type" : "application/json"
-    //   }
-    // } )
+    const eventObject = instantiateEvent_in_LocalStorage(eventID)
+    const isClicked = eventObject.isDiscordClicked
+
+    if (!isClicked){
+      setProperty_in_LocalStorage(eventID, "discord")
+      const requestOptions ={ // *PUT request options
+        method: "PUT",
+        headers:{
+          "Accept" : "application/json",
+          "Content-Type" : "application/json"
+        },
+        body: JSON.stringify({eventID: eventID})
+      } // requestOptions var
+  
+      fetch(`${proxy}/incrementDiscord_click`,requestOptions)
+    }
+
   } // incrementGoogle_click
 
 
