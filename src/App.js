@@ -15,13 +15,13 @@ function App() {
 
   const proxy = "http://localhost:3001" // * for local environment
 
-  const handleOpen_PopUp = (event) =>{
+  const handleOpen_PopUp = (event) =>{ // opens pop up window
     const target = event.currentTarget // * gets target, and its attributes
     const {id} = target // ! ID of schedule
     let eventClicked
 
     // ! Finds the event clicked by user
-
+    // run time for finding event is garbage O(n); should have made hashmap
     sundayScheduleState.find(sundayEvent => {
       if (sundayEvent.id === id){
         eventClicked = sundayEvent
@@ -46,7 +46,7 @@ function App() {
     })
   } // handleOpen_PopUp
 
-  const handleClose_PopUp = () =>{
+  const handleClose_PopUp = () =>{ // c;oses pop up window
     setPopUp((prevPopUp) => ({isClicked:false})) // * For button in popup
   } // handleClose_PopUp
 
@@ -69,23 +69,24 @@ function App() {
       window.localStorage.setItem(id, JSON.stringify(objectProperties) )
     }
 
-    return JSON.parse(window.localStorage.getItem(id))
+    return JSON.parse(window.localStorage.getItem(id)) // returns a parsed local storage obj
   }
 
-  const setProperty_in_LocalStorage = (id,linkType) =>{
+  const setProperty_in_LocalStorage = (id,linkType) =>{ 
     const eventProperty = JSON.parse(window.localStorage.getItem(id))
+
+    //  depending on link type on what obj property to change
     if (linkType === "google"){
       eventProperty.isGoogleClicked = true
-
     }
     else{
       eventProperty.isDiscordClicked = true
     }
 
-    window.localStorage.setItem(id, JSON.stringify(eventProperty))
+    window.localStorage.setItem(id, JSON.stringify(eventProperty)) // sets new obj in local storage
   }
 
-  // * API calls
+  // * Fetch Requests
   const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
     const eventObject = instantiateEvent_in_LocalStorage(eventID)
     const isClicked = eventObject.isGoogleClicked  
@@ -106,7 +107,7 @@ function App() {
 
   } // incrementGoogle_click
 
-  const incrementDiscord_click = (eventID) =>{
+  const incrementDiscord_click = (eventID) =>{ // inside modal component when discord link is pressed
     const eventObject = instantiateEvent_in_LocalStorage(eventID)
     const isClicked = eventObject.isDiscordClicked
 
@@ -137,7 +138,6 @@ function App() {
   const [workshopScheduleState,setWorkshopScheduleState] = useState(null)
   const [saturdayScheduleState,setSaturdayScheduleState] = useState(null)
   const [sundayScheduleState,setSundayScheduleState] = useState(null)
-
   const [isRendered, setIsRendered] = useState(false)
 
 
