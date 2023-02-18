@@ -89,9 +89,9 @@ function App() {
   // * Fetch Requests
   const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
     const eventObject = instantiateEvent_in_LocalStorage(eventID)
-    const isClicked = eventObject.isGoogleClicked  
+    const isGoogleClicked = eventObject.isGoogleClicked  
 
-    if (!isClicked){
+    if (!isGoogleClicked){
       setProperty_in_LocalStorage(eventID, "google")
       const requestOptions ={ // *PUT request options
         method: "PUT",
@@ -109,9 +109,9 @@ function App() {
 
   const incrementDiscord_click = (eventID) =>{ // inside modal component when discord link is pressed
     const eventObject = instantiateEvent_in_LocalStorage(eventID)
-    const isClicked = eventObject.isDiscordClicked
+    const isDiscordClicked = eventObject.isDiscordClicked
 
-    if (!isClicked){
+    if (!isDiscordClicked){
       setProperty_in_LocalStorage(eventID, "discord")
       const requestOptions ={ // *PUT request options
         method: "PUT",

@@ -8,7 +8,7 @@
 
 }
 
-@media(max-width: 750px){ /* For mobile phones */
+@media(max-width: 900px){ /* For mobile phones */
   h3{
     font-size: 6px;
     min-width: 35px;
