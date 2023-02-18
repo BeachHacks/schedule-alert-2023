@@ -1,9 +1,9 @@
 @media (max-width: 1030px ){ /* For Laptops when resizing screen */
   .grid--container .event--description {
-    scale: 80%;
+    scale: 90%;
   }
   .tentativeSchedule--column .event--container div{
-    scale: 60%;
+    scale: 70%;
   }
 
 }
@@ -333,7 +333,7 @@ h2{
   width: 100%;
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 45px;
-  background-color: #A0CFED;
+  background-color: #49aeed;
 }
 
 .header > h3{
