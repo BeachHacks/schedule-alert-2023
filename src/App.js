@@ -46,7 +46,7 @@ function App() {
     })
   } // handleOpen_PopUp
 
-  const handleClose_PopUp = () =>{ // c;oses pop up window
+  const handleClose_PopUp = () =>{ // closes pop up window
     setPopUp((prevPopUp) => ({isClicked:false})) // * For button in popup
   } // handleClose_PopUp
 
