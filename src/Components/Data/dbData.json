@@ -131,4 +131,11 @@
   "name": "Hacking... (Sunday)",
   "google_clicks": 0,
   "discord_clicks": 0
+},{
+  "_id": {
+    "$oid": "63f153c0296438bd17f35c8d"
+  },
+  "name": "Career Coffee Chat with Dane from Apple",
+  "google_clicks": 0,
+  "discord_clicks": 0
 }]
