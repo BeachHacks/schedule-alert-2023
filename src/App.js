@@ -56,10 +56,43 @@ function App() {
     .then((res) => console.log("result: ", res))
   } // testConnection
 
+
+  // * for localStorage
+
+  const instantiateEvent_in_LocalStorage = (id) =>{
+    const isInsantiated = window.localStorage.getItem(id) === null ? false : true // see if event exists in local storage
+    
+
+    if (!isInsantiated){
+      console.log("Insantiate")
+      const objectProperties = {
+        isGoogleClick: false,
+        isDiscordClick: false
+      }
+      window.localStorage.setItem(id, JSON.stringify(objectProperties) )
+    }
+  }
+
+  const setProperty_in_LocalStorage = (id,linkType) =>{
+    const eventProperty = JSON.parse(window.localStorage.getItem(id))
+    console.log("event: ", eventProperty)
+    if (linkType === "google"){
+      eventProperty.isGoogleClick = true
+      window.localStorage.setItem(id, JSON.stringify(eventProperty))
+    }
+    else{
+      eventProperty.isDiscordClick = true
+      window.localStorage.setItem(id, JSON.stringify(eventProperty))
+    }
+  }
+
   // * API calls
 
   const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
-    // console.log("Event id", eventID)
+    instantiateEvent_in_LocalStorage(eventID)
+    setProperty_in_LocalStorage(eventID, "google")
+
+    console.log("local storage: ", window.localStorage)
     const requestOptions ={ // *PUT request options
       method: "PUT",
       headers:{
@@ -72,15 +105,21 @@ function App() {
     .then((response) => console.log("Response from server: ", response) )
   } // incrementGoogle_click
 
-  const incrementDiscord_click = () =>{
-    fetch(`${proxy}/incrementGoogle_click`,{
-      method: "PUT",
-      headers:{
-        "Accept" : "application/json",
-        "Content-Type" : "application/json"
-      }
-    } )
+  const incrementDiscord_click = (eventID) =>{
+    instantiateEvent_in_LocalStorage(eventID)
+    setProperty_in_LocalStorage(eventID, "discord")
+    console.log("local storage: ", window.localStorage)
+    // fetch(`${proxy}/incrementGoogle_click`,{
+    //   method: "PUT",
+    //   headers:{
+    //     "Accept" : "application/json",
+    //     "Content-Type" : "application/json"
+    //   }
+    // } )
   } // incrementGoogle_click
+
+
+  
   // ! Data without ID
   const {workshopData,tentativeScheduleData} = scheduleData
   const {saturdayData, sundayData} = tentativeScheduleData

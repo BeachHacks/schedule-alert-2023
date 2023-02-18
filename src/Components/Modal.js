@@ -14,7 +14,7 @@ export default function Modal(props){
                     <img src={googleImg} />
                     <h3>Google</h3>
                 </a>
-                <a href={discord_link} target="_blank">
+                <a href={discord_link} target="_blank" onClick={() => incrementDiscord_click(eventID)}>
                     <img src={discordImg}  />
                     <h3>Discord</h3>
                 </a>
