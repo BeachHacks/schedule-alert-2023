@@ -4,7 +4,6 @@ import {useState,useEffect} from "react"
 import scheduleData from "./Components/Data/scheduleData.json"
 import Schedule from './Components/Schedule';
 import PopUp from './Components/PopUp';
-import Header from "./Components/Header"
 import Footer from './bhComponents/Footer/Footer';
 // import { db } from '../../server/models/event';
 
@@ -59,6 +58,7 @@ function App() {
   // * API calls
 
   const incrementGoogle_click = (eventID) =>{ // inside modal component when google link is pressed
+    console.log("Anchor tag clicked")
     // console.log("Event id", eventID)
     const requestOptions ={ // *PUT request options
       method: "PUT",
@@ -72,15 +72,24 @@ function App() {
     .then((response) => console.log("Response from server: ", response) )
   } // incrementGoogle_click
 
-  const incrementDiscord_click = () =>{
-    fetch(`${proxy}/incrementGoogle_click`,{
+  const incrementDiscord_click = (eventID) => {
+    console.log("Increment discord click called")
+    const requestOptions = {
       method: "PUT",
-      headers:{
-        "Accept" : "application/json",
-        "Content-Type" : "application/json"
-      }
-    } )
-  } // incrementGoogle_click
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ eventID: eventID })
+    };
+  
+    fetch(`${proxy}/incrementDiscord_click`, requestOptions)
+      .then((response) => console.log("Response from server: ", response))
+  } // incrementDiscord_click
+
+
+
+  
   // ! Data without ID
   const {workshopData,tentativeScheduleData} = scheduleData
   const {saturdayData, sundayData} = tentativeScheduleData
@@ -95,6 +104,7 @@ function App() {
 
 
   useEffect( () =>{ // Fetches event data from server
+    console.log("API request ")
     fetch(`${proxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
@@ -151,7 +161,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Header/>
+      <h1>Schedule Alerts</h1>
       {isRendered && 
         <Schedule 
         workshopSchedule={workshopScheduleState} 
