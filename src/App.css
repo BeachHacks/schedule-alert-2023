@@ -83,6 +83,10 @@
     scale:30% !important;
   }
 
+  .footer-bottom h3{
+    font-size: 12px;
+  }
+
 }
 
 @media(max-width: 300px){ /* For galaxy fold :( */
