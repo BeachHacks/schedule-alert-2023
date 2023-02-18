@@ -1,7 +1,7 @@
 import PopUp from "./PopUp"
 
 export default function Schedule(props){
-    const generateTentativeSchedule = () =>{
+    const generateTentativeSchedule = () =>{ // creates schedule for sat and sun 
 
         const saturdayEvents = props.saturdaySchedule.map(event =>(
             <div className="event--table" key={event.id} onClick={props.handleOpen_PopUp} id={event.id} name="saturday" >

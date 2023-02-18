@@ -13,7 +13,7 @@ export default function PopUp(props){
     let popUpSticker
 
 
-    switch (eventType){
+    switch (eventType){ // selects sticker depending on event
         case "Registration":
             popUpSticker = require("./images/judge_sharks.png")
             break
