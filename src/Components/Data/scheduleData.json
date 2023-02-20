@@ -10,20 +10,7 @@
             "description" : "Not very familiar with GitHub and you need it for this hackathon? Don’t worry, BeachHacks got you! Come to our first workshop of the day where you will learn about the basics of Github. By the end of the session, you will learn how to navigate Github confidently!",
             "link": {
                 "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDYyYnI5NzkzcGlpZmZvaDhlNGtjcGZzOTMgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                "discord_link" : "https://beachhacks.com"
-            }
-        },
-        {
-            "time" : "7:00PM-8:00PM",
-            "day": "Saturday",
-            "title" : "Video Game Development",
-            "eventType": "Workshop",
-            "category" : "VGDA",
-            "description" : "Interested in learning about video game development? VGDA is hosting a workshop to help you learn about video game development.",
-            "location" : "Alamitos Bay",
-            "link": {
-                "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHRrZTdmZGdta2JlanMxb205ZTd2dGpybWEgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                "discord_link" : "https://beachhacks.com"
+                "discord_link" : "https://discord.gg/zsHBg6QH"
             }
         },
         {
@@ -36,9 +23,23 @@
             "location" : "Alamitos Bay",
             "link": {
                 "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NTU0MW9yczh0dmkza2MxcXR0NmNxODlnNGggMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                "discord_link" : "https://beachhacks.com"
+                "discord_link" : "https://discord.gg/zsHBg6QH"
             }
         },
+        {
+            "time" : "7:00PM-8:00PM",
+            "day": "Saturday",
+            "title" : "Video Game Development",
+            "eventType": "Workshop",
+            "category" : "VGDA",
+            "description" : "Interested in learning about video game development? VGDA is hosting a workshop to help you learn about video game development.",
+            "location" : "Alamitos Bay",
+            "link": {
+                "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHRrZTdmZGdta2JlanMxb205ZTd2dGpybWEgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
+                "discord_link" : "https://discord.gg/zsHBg6QH"
+            }
+        },
+
         {
             "time" : "11:00AM-12:00PM",
             "day": "Sunday",
@@ -49,7 +50,7 @@
             "location" : "Alamitos Bay",
             "link": {
                 "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGRoazM0YnZhc3V0djQzMzZsNTM3aXJpbGkgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                "discord_link" : "https://beachhacks.com"
+                "discord_link" : "https://discord.gg/zsHBg6QH"
             }
         },
         {
@@ -62,7 +63,7 @@
             "location" : "Alamitos Bay",
             "link": {
                 "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MnVvdWM5bm1tbGtkbnZucWNzMDdtMTdjOGYgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                "discord_link" : "https://beachhacks.com"
+                "discord_link" : "https://discord.gg/zsHBg6QH"
             }
         }
     ],
@@ -78,7 +79,7 @@
                 "description" : "TBA",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGw0N2VoN25pM3FrajIxOTZwaWlzZXFpcWQgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
 
             },
@@ -91,7 +92,7 @@
                 "description" : "Join us at our ceremony to learn more about rules, prizes and events we have planned out for BeachHacks 7.0! Additionally, Micheal Botsko will be our opening keynote speaker. He has years of experience in the EdTech industry. Michael was also the founder of BeachHacks and the president of ACM!",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjB0ZDR1OGJ0Y25ibnAybjR0bjFhOWFhbmQgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -103,7 +104,7 @@
                 "description" : "Good luck with your hacking journey! ",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjRzbDkydTZsY3ZlNXEyYm1uaDBwZHNrdTEgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -115,7 +116,7 @@
                 "description" : "Come along and have a coffee chat with Dane. Dane is a Senior Systems Engineer working at Apple. He will be discussing career paths, career opportunities, internships and many more.",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDNhN3FvZThtdWpocWNsN3VvanB0cmswMm0gbWVraGloYXJ0ZGVsYWNydXpAbQ&tmsrc=mekhihartdelacruz%40gmail.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -127,7 +128,7 @@
                 "description" : "Nom, nom!",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M3NzY2ZmZDdvcmM4ODU3MGY5ZTBqbXQ4MDUgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -139,7 +140,7 @@
                 "description" : "Want to learn how to make yourself stand out with the hackathon project you’re coding right now? Well, this is the event for you to attend! Christian Bourdeau will be our keynote speaker. He has many years of experience as an analytic engineer under his belt. Christian has worked in different companies such as Nike, PlayStation and more. Currently he is working with Netflix.",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGoxMGFnbXZ0czUxdG5wM2EyMDI4Mm05OWcgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -151,7 +152,7 @@
                 "description" : "Need a break from coding? Come to our social/networking event where you will meet new friends and bond through playing fun games❤️",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M2xzMnZpNmVmZWpudjgxZHRtcGxrY3Q2ZnYgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -163,7 +164,7 @@
                 "description" : "If you need any information regarding workshops, please don’t hesitate to ask one of the volunteers. Have fun coding!",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NTNvZTA2c284b2ZzM3ZoazdlM2ltbGNsY2ggMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             }
 
@@ -179,7 +180,7 @@
                 "description" : "If you need any information regarding workshops, please don’t hesitate to ask one of the volunteers. Have fun coding!",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MWlycTE1bGppdXF0MzdmYWxsdXFwYWw0bjkgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -191,7 +192,7 @@
                 "description" : "We eat breakfast for success!",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NnZrdDl0bTN1bmpjNHB2bWpkdDlkOW8xY3IgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -203,7 +204,7 @@
                 "description" : "Wanna improve your motor skills and hand-eye coordination? We have cup stacking game waiting for you to play against other participants.",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MmY3Y2dvbjMxdmY0OGs0MDUzcHUza2xlb2sgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -215,7 +216,7 @@
                 "description" : "Don’t forget to fill up your stomach with food before you continue coding!",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGFoNXJjdG1xYWdkc3RpZmRiNWk1M2sza2QgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -227,7 +228,7 @@
                 "description" : "Wonder what working in the professional industries are like? Come to our career panel to hear from our alumni about their experience.",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MTU1ZnRqdGNiYXQyaGhrZjlxOXQ0cXZuMjUgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -239,7 +240,7 @@
                 "description" : "Good job! Now it’s time to relax and wait for the result. Judging is in the process…",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MW9jMWU3NzBmOXRyMTFpOGozMWlodDZtNmggMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             },
             {
@@ -251,7 +252,7 @@
                 "description" : "You guys have worked hard for this hackathon. Come to our closing ceremony to find out if your team won and celebrate everyone’s hard work. Additionally, Christian Bourdeau will be our closing keynote speaker. He has many years of experience as an analytic engineer under his belt. Christian has worked in different companies such as Nike, PlayStation and more. Currently he is working with Netflix.",
                 "link": {
                     "google_link" : "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGhwODVnbGkyaHRtZ21vNGw1MHBlZHU3M3AgMmI2MGM1MDgzMjk1ZGRkYzIwNWZhMTE4ODg0NTFlNmUxNjU2ZjkzNmU0Y2VmNjhkNDY5YWU2OGZiOGI5ZmU2YUBn&tmsrc=2b60c5083295dddc205fa11888451e6e1656f936e4cef68d469ae68fb8b9fe6a%40group.calendar.google.com",
-                    "discord_link" : "https://beachhacks.com"
+                    "discord_link" : "https://discord.gg/zsHBg6QH"
                 }
             }
         ]
