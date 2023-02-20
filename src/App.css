@@ -61,7 +61,10 @@
   .tentativeSchedule--column .event--container .event--time{
     font-size: 9px !important;
   }
-
+  
+  .grid--container .event--location h3{
+    font-size: 8px;
+  }
 
   .popup--container{
     scale: 50% !important;
