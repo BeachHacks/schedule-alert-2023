@@ -67,7 +67,7 @@ export default function PopUp(props){
             <div className="popup--container" >
                 <div style={buttonContainerStyle}><button onClick={props.handleClose_PopUp}><img src={closeButtonSrc}/></button></div>
                 <h1>{popUpData.title}</h1>
-                <h2>Location: {popUpData.location}</h2>
+                <h2>Location: <u>{popUpData.location}</u></h2>
                 <p>{popUpData.description}</p>
                 <Modal links={link} modalHandlers={props.modalHandlers} eventID={id}/>
                 <img src={popUpSticker}  id="popUpImg"/>
