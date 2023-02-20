@@ -146,8 +146,7 @@ function App() {
     .then((res) => res.json())
     .then((db_array) => {
 
-      // ! objectTag is the tag that is used to query in which type of collection it is inside the DB
-      // ! objectTag needs to be replaced when the DB is changes, or restarted back to 0 clicks  
+      // ! Optimization needed here, Runtime to find each event from db_array is O(n)
       setWorkshopScheduleState( () =>{
         const returnData = workshopData.map( (event) =>({
           ...event,
