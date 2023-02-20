@@ -90,6 +90,11 @@
     font-size: 12px;
   }
 
+  #popUpImg{
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
 }
 
 @media(max-width: 300px){ /* For galaxy fold :( */
