@@ -302,6 +302,8 @@ h2{
 
   scale: 45%;
   max-width: 800px;
+  min-width: 600px;
+
 }
 
 .popup--container p{
