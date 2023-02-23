@@ -1,24 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.fb7e73e0.css",
-    "main.js": "/static/js/main.809af23c.js",
+    "main.js": "/static/js/main.0c951bcc.js",
     "static/js/787.8fa81337.chunk.js": "/static/js/787.8fa81337.chunk.js",
     "static/media/sharks_conversating.png": "/static/media/sharks_conversating.c70700b39e368b288e29.png",
     "static/media/BH_7-0.png": "/static/media/BH_7-0.e250093c5679da65f36c.png",
     "static/media/boba_sharks.png": "/static/media/boba_sharks.1a7d4ea133eedeb66c1e.png",
     "static/media/linkedin_shark.png": "/static/media/linkedin_shark.a35ac9395bf3fec00403.png",
     "static/media/judge_sharks.png": "/static/media/judge_sharks.9fe909803e85ad383898.png",
-    "static/media/dressed_up_shark.png": "/static/media/dressed_up_shark.2420e406a878b3649f71.png",
     "static/media/computer_sharks.png": "/static/media/computer_sharks.fc09786ca889fa2ada1a.png",
     "static/media/donut_shark.png": "/static/media/donut_shark.f1aa2fa8dfa324467670.png",
     "static/media/discord.png": "/static/media/discord.5de04f93d4e03aa4b51c.png",
     "index.html": "/index.html",
     "main.fb7e73e0.css.map": "/static/css/main.fb7e73e0.css.map",
-    "main.809af23c.js.map": "/static/js/main.809af23c.js.map",
+    "main.0c951bcc.js.map": "/static/js/main.0c951bcc.js.map",
     "787.8fa81337.chunk.js.map": "/static/js/787.8fa81337.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb7e73e0.css",
-    "static/js/main.809af23c.js"
+    "static/js/main.0c951bcc.js"
   ]
 }
