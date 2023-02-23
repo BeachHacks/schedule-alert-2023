@@ -18,36 +18,43 @@ function App() {
   const handleOpen_PopUp = (event) =>{ // opens pop up window
     const target = event.currentTarget // * gets target, and its attributes
     const {id} = target // ! ID of schedule
-    let eventClicked
-
-    // ! Finds the event clicked by user
-    // run time for finding event is garbage O(n); should have made hashmap
-    sundayScheduleState.find(sundayEvent => {
-      if (sundayEvent.id === id){
-        eventClicked = sundayEvent
-      }
-    })
-
-    saturdayScheduleState.find(saturdayEvent => {
-      if (saturdayEvent.id === id){
-        eventClicked = saturdayEvent
-      }
-    })
-
-    workshopScheduleState.find(workshopEvent => {
-      if (workshopEvent.id === id){
-        eventClicked = workshopEvent
-      }
-    })
-
+    let eventClicked = eventReferences.get(id) // gets event from hashmap
     setPopUp({
       ...eventClicked,
       isClicked: true
     })
+
+    // Garbage Example of garbage runtime O(n) so future devs looks at thisand cringe
+    // Previous attempt before using HashMap
+
+    // ! Finds the event clicked by user
+    // run time for popUp window when user clicks on event
+    // sundayScheduleState.find(sundayEvent => {
+    //   if (sundayEvent.id === id){
+    //     eventClicked = sundayEvent
+    //   }
+    // })
+
+    // saturdayScheduleState.find(saturdayEvent => {
+    //   if (saturdayEvent.id === id){
+    //     eventClicked = saturdayEvent
+    //   }
+    // })
+
+    // workshopScheduleState.find(workshopEvent => {
+    //   if (workshopEvent.id === id){
+    //     eventClicked = workshopEvent
+    //   }
+    // })
+
+    // setPopUp({
+    //   ...eventClicked,
+    //   isClicked: true
+    // })
   } // handleOpen_PopUp
 
   const handleClose_PopUp = () =>{ // closes pop up window
-    setPopUp((prevPopUp) => ({isClicked:false})) // * For button in popup
+    setPopUp({isClicked:false}) // * For button in popup
   } // handleClose_PopUp
 
   const testConnection = () =>{ // * used for testing connection between server and app
@@ -138,17 +145,23 @@ function App() {
   const [workshopScheduleState,setWorkshopScheduleState] = useState(null)
   const [saturdayScheduleState,setSaturdayScheduleState] = useState(null)
   const [sundayScheduleState,setSundayScheduleState] = useState(null)
-  const [isRendered, setIsRendered] = useState(false)
+  const [isRendered, setIsRendered] = useState(false) // sees if all events have rendered
+
+  const [eventReferences, setEventReferences] = useState(null) // used for referencing event when user clicks on event to produce popUp window: O(n) --> o(1)
+  
 
 
   useEffect( () =>{ // Fetches event data from server
+     // * idk why this function is being called twice; causing issues for the isRendered variable
+    // ! turns out in development mode, useEffect is ran TWICE to check for potential problems
     fetch(`${proxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
+
+      // * Optimized to get object id into O(1)
       const nameToId = new Map() // maps event name to object id
-      db_array.forEach( dbObj => nameToId.set(dbObj.name,dbObj._id))
-      console.log(nameToId)
-      // ! Optimization needed here, Runtime to find each event from db_array is O(n)
+      db_array.forEach( dbObj => nameToId.set(dbObj.name,dbObj._id)) 
+
       setWorkshopScheduleState( () =>{
         const returnData = workshopData.map( (event) =>({
           ...event,
@@ -177,6 +190,30 @@ function App() {
       setIsRendered(true)
     })
   },[])
+
+
+  useEffect( () =>{ // set eventReferences here
+    if (isRendered){ // failsafe because first useEffect is being called twice in dev
+      let idToEvent = new Map()
+
+      for (const workshop of workshopScheduleState){
+        const eventId = workshop.id
+        idToEvent.set(eventId, workshop)
+      }
+
+      for (const event of saturdayScheduleState){
+        const eventId = event.id
+        idToEvent.set(eventId, event)
+      }
+
+      for (const event of sundayScheduleState){
+        const eventId = event.id
+        idToEvent.set(eventId, event)
+      }
+      setEventReferences(idToEvent)
+    }
+
+  },[isRendered])
 
   // ! changing normal data to states
   // * data gotten from local json data
