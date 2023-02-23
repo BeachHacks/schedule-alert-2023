@@ -145,12 +145,14 @@ function App() {
     fetch(`${proxy}/get_eventsID`)
     .then((res) => res.json())
     .then((db_array) => {
-
+      const nameToId = new Map() // maps event name to object id
+      db_array.forEach( dbObj => nameToId.set(dbObj.name,dbObj._id))
+      console.log(nameToId)
       // ! Optimization needed here, Runtime to find each event from db_array is O(n)
       setWorkshopScheduleState( () =>{
         const returnData = workshopData.map( (event) =>({
           ...event,
-          id: db_array.find(db_event => event.title === db_event.name)._id
+          id: nameToId.get(event.title)
           
         }))
         return returnData
@@ -159,7 +161,7 @@ function App() {
       setSaturdayScheduleState( () =>{
         const returnData = saturdayData.map( (event) =>({
           ...event,
-          id: db_array.find(db_event => event.title === db_event.name)._id
+          id: nameToId.get(event.title)
         }))
         return returnData
       })
@@ -167,7 +169,7 @@ function App() {
       setSundayScheduleState( () =>{
         const returnData = sundayData.map( (event) =>({
           ...event,
-          id: db_array.find(db_event => event.title === db_event.name)._id
+          id: nameToId.get(event.title)
         }))
         return returnData
       })
