@@ -23,7 +23,7 @@ export default function PopUp(props){
             break
 
         case "Hackathon":
-            popUpSticker = require("./images/dressed_up_shark.png")
+            popUpSticker = require("./images/boba_sharks.png")
             break
 
         case "Hacking":
@@ -43,7 +43,7 @@ export default function PopUp(props){
             break
 
         case "Career-Panel":
-            popUpSticker = require("./images/dressed_up_shark.png")
+            popUpSticker = require("./images/boba_sharks.png")
             break
 
         case "LinkedIn":
