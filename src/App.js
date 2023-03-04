@@ -151,21 +151,51 @@ function App() {
   
 
 
-  useEffect( () =>{ // Fetches event data from server
-     // * idk why this function is being called twice; causing issues for the isRendered variable
-    // ! turns out in development mode, useEffect is ran TWICE to check for potential problems
-    fetch(`${proxy}/get_eventsID`)
-    .then((res) => res.json())
-    .then((db_array) => {
+  // useEffect( () =>{ // Fetches event data from server (Commneted due to server downgrade)
+  //    // * idk why this function is being called twice; causing issues for the isRendered variable
+  //   // ! turns out in development mode, useEffect is ran TWICE to check for potential problems
+  //   fetch(`${proxy}/get_eventsID`)
+  //   .then((res) => res.json())
+  //   .then((db_array) => {
 
-      // * Optimized to get object id into O(1)
-      const nameToId = new Map() // maps event name to object id
-      db_array.forEach( dbObj => nameToId.set(dbObj.name,dbObj._id)) 
+  //     // * Optimized to get object id into O(1)
+  //     const nameToId = new Map() // maps event name to object id
+  //     db_array.forEach( dbObj => nameToId.set(dbObj.name,dbObj._id)) 
 
-      setWorkshopScheduleState( () =>{
+  //     setWorkshopScheduleState( () =>{
+  //       const returnData = workshopData.map( (event) =>({
+  //         ...event,
+  //         id: nameToId.get(event.title)
+          
+  //       }))
+  //       return returnData
+  //     })
+
+  //     setSaturdayScheduleState( () =>{
+  //       const returnData = saturdayData.map( (event) =>({
+  //         ...event,
+  //         id: nameToId.get(event.title)
+  //       }))
+  //       return returnData
+  //     })
+
+  //     setSundayScheduleState( () =>{
+  //       const returnData = sundayData.map( (event) =>({
+  //         ...event,
+  //         id: nameToId.get(event.title)
+  //       }))
+  //       return returnData
+  //     })
+
+  //     setIsRendered(true)
+  //   })
+  // },[])
+
+  useEffect( () =>{ // Events is not fetched from Express.js 
+          setWorkshopScheduleState( () =>{
         const returnData = workshopData.map( (event) =>({
           ...event,
-          id: nameToId.get(event.title)
+          id: nanoid()
           
         }))
         return returnData
@@ -174,7 +204,7 @@ function App() {
       setSaturdayScheduleState( () =>{
         const returnData = saturdayData.map( (event) =>({
           ...event,
-          id: nameToId.get(event.title)
+          id: nanoid()
         }))
         return returnData
       })
@@ -182,13 +212,15 @@ function App() {
       setSundayScheduleState( () =>{
         const returnData = sundayData.map( (event) =>({
           ...event,
-          id: nameToId.get(event.title)
+          id: nanoid()
         }))
         return returnData
       })
 
       setIsRendered(true)
-    })
+
+
+
   },[])
 
 
@@ -231,6 +263,8 @@ function App() {
   //   ...event,
   //   id:nanoid()
   // }))
+
+  // console.log("workshop:", workshopSchedule )
 
 
   return (
